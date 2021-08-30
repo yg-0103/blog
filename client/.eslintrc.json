@@ -1,0 +1,31 @@
+{
+  "extends": ["next/core-web-vitals", "next/babel"],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "react/display-name": "off",
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "vars-on-top": "off",
+    "no-underscore-dangle": "off", // var _foo;
+    "comma-dangle": "off",
+    "func-names": "off", // setTimeout(function () {}, 0);
+    "prefer-template": "off",
+    "no-nested-ternary": "off",
+    "max-classes-per-file": "off",
+    "consistent-return": "off",
+    "no-restricted-syntax": ["off", "ForOfStatement"], // disallow specified syntax(ex. WithStatement)
+    "prefer-arrow-callback": "error", // Require using arrow functions for callbacks
+    "require-await": "error",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true, // a || b
+        "allowShortCircuit": true, // a ? b : 0
+        "allowTaggedTemplates": true
+      }
+    ]
+  }
+}
