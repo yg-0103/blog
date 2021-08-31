@@ -1,5 +1,5 @@
-import Header from '@components/Header'
+import Layout from 'src/Layout/Layout'
 
 export default function Home() {
-  return <Header />
+  return <Layout>dddd</Layout>
 }

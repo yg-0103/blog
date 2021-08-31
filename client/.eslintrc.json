@@ -3,7 +3,7 @@
   "rules": {
     "@next/next/no-img-element": "off",
     "react/display-name": "off",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "error",
     "no-console": "warn",
     "no-plusplus": "off",
     "no-shadow": "off",

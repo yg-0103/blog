@@ -11,6 +11,5 @@ export const Title = styled.h1`
   font-weight: 900;
   color: #747474;
   letter-spacing: 0.1rem;
-
   ${gradientText('#2cdb93', '#36c6ff', '180deg')}
 `
