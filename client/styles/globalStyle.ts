@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 10px;
   }
 
-
   * {
     margin: 0;
     padding: 0;
@@ -21,5 +20,13 @@ export const GlobalStyle = createGlobalStyle`
   button {
     background: none;
     border: none;
+    cursor: pointer;
+  }
+
+  input {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
   }
 `

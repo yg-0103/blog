@@ -13,6 +13,7 @@ export const Nav = styled.nav<{ active: boolean }>`
   background: #fff;
   transition: 0.3s;
   transform: ${({ active }) => `translateX(${active ? 0 : '100%'})`};
+  z-index: 1000;
 `
 
 export const NavItem = styled.a<{ active: boolean }>`
