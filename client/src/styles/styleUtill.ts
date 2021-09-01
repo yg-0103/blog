@@ -27,3 +27,11 @@ export const gradientText = (
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `
+
+export const multipleLineEllipsis = (clamp: number) => css`
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: ${clamp};
+  -webkit-box-orient: vertical;
+`

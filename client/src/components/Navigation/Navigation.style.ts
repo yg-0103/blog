@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { gradientText, makeGradient } from 'styles/styleUtill'
+import { gradientText, makeGradient } from '@styles/styleUtill'
 
 export const Nav = styled.nav`
   display: flex;

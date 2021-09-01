@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { flexCenter, gradientText } from 'styles/styleUtill'
+import { flexCenter, gradientText } from '@styles/styleUtill'
 
 export const Container = styled.div`
   ${flexCenter}

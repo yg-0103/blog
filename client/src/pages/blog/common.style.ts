@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { flexCenter } from 'styles/styleUtill'
+import { flexCenter } from '@styles/styleUtill'
 
 export const Section = styled.section`
   max-width: 100rem;

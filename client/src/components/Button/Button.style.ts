@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { flexCenter, makeGradient } from 'styles/styleUtill'
+import { flexCenter, makeGradient } from '@styles/styleUtill'
 
 export const Button = styled.button`
   ${flexCenter};

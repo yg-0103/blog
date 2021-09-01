@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { gradientText } from 'styles/styleUtill'
+import { gradientText } from '@styles/styleUtill'
 
 export const Nav = styled.nav<{ active: boolean }>`
   position: fixed;

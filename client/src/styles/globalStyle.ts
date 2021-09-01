@@ -29,4 +29,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+  
+  ul, li, ol, dl {
+    padding: 0;
+    list-style: none;
+  }
 `
