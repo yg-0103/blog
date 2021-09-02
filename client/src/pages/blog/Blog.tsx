@@ -4,16 +4,17 @@ import * as CS from './common.style'
 import MarkdownEditor from './components/MarkdownEditor'
 import Input from './components/Input'
 import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil'
-import { blogContent, blogMode, MODE, postState } from '@store/atom'
+import { blogContent, blogHashTag, blogMode, MODE, postState } from '@store/atom'
 import PostList from './components/PostList'
 
 export default function Blog() {
   const [mode, setMode] = useRecoilState(blogMode)
   const setContent = useSetRecoilState(blogContent)
-  const post = useRecoilValue(postState)
+  const setHashTags = useSetRecoilState(blogHashTag)
 
   const handleChangeMode = () => {
     setContent('')
+    setHashTags([])
     setMode((prev) => (prev === MODE.READ ? MODE.WRITE : MODE.READ))
   }
 
@@ -24,8 +25,7 @@ export default function Blog() {
           <Input />
           <Button onClick={handleChangeMode}>{mode}</Button>
         </CS.FlexWrapper>
-        {mode === MODE.WRITE && <MarkdownEditor />}
-        <PostList />
+        {mode === MODE.WRITE ? <MarkdownEditor /> : <PostList />}
       </CS.Section>
     </Layout>
   )

@@ -25,6 +25,11 @@ export const blogContent = atom({
   default: '',
 })
 
+export const blogHashTag = atom<string[]>({
+  key: 'BlogHashTag',
+  default: [],
+})
+
 export const blogInputValue = selector({
   key: 'BlogInputValue',
   get: ({ get }) => {
@@ -44,5 +49,6 @@ export const postState = selector({
   get: ({ get }) => ({
     title: get(blogTitle),
     content: get(blogContent),
+    hashTags: get(blogHashTag),
   }),
 })
