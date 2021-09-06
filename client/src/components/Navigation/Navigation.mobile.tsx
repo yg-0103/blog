@@ -1,12 +1,14 @@
 import { useRouter } from 'next/dist/client/router'
 import * as S from './Navigation.mobile.style'
 import Link from 'next/link'
-const navItems = ['home', 'about', 'blog', 'contact']
+
 
 interface Props {
   activeMenu: boolean
   handleActive: () => void
 }
+
+const navItems = ['home', 'about', 'blog', 'contact']
 
 export default function NavigationMobile({ activeMenu, handleActive }: Props) {
   const { pathname } = useRouter()

@@ -14,6 +14,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  console.log(req.body);
   try {
     const post = await Post.create(req.body);
     res.status(201).send(post);

@@ -1,11 +1,12 @@
 import axios from 'axios'
-import { Post } from './type'
+import * as T from './type'
 
 const API = axios.create({
   baseURL: 'http://localhost:4500',
 })
 
-export const addPost = async (payload: Post) => {
+export const addPost = async (payload: T.Post) => {
+  console.log(333)
   try {
     const { data: post } = await API.post('/post', payload)
     return post

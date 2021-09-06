@@ -16,6 +16,7 @@ export default function Header() {
   useEffect(() => {
     setActiveMenu(false)
   }, [isSmall])
+  
   return (
     <S.Header>
       <S.Container>

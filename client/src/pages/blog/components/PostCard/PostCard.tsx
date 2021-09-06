@@ -1,6 +1,7 @@
 import * as S from './PostCard.style'
 
 export default function PostCard() {
+ 
   return (
     <S.Container>
       <S.ImageWrapper>
