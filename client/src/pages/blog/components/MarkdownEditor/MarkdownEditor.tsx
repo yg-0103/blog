@@ -19,6 +19,7 @@ const EditorWithForwardedRef = React.forwardRef<EditorType | undefined, EditorPr
 export default function MarkdownEditor() {
   const editorRef = useRef<EditorType>()
   const setContent = useSetRecoilState(blogContent)
+
   const handleChange = () => {
     if (!editorRef.current) {
       return
