@@ -1,21 +1,20 @@
+import { PostResponse } from '@store/type'
 import * as S from './PostCard.style'
 
-export default function PostCard() {
- 
+interface Props {
+  post: PostResponse
+}
+
+export default function PostCard({ post }: Props) {
   return (
     <S.Container>
       <S.ImageWrapper>
         <img src="" />
       </S.ImageWrapper>
       <S.ContentWrapper>
-        <S.PostTitle>포스트 제목</S.PostTitle>
-        <S.PostContent>
-          포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트
-          내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트
-          내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용포스트
-          내용포스트 내용포스트 내용포스트 내용포스트 내용포스트 내용
-        </S.PostContent>
-        <S.TimeStemp>2020.11.11</S.TimeStemp>
+        <S.PostTitle>{post.title}</S.PostTitle>
+        <S.PostContent>{post.content}</S.PostContent>
+        <S.TimeStemp>{post.createdAt}</S.TimeStemp>
       </S.ContentWrapper>
     </S.Container>
   )

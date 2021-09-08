@@ -5,13 +5,13 @@ import * as S from './PostList.style'
 
 export default function PostList() {
   const posts = useRecoilValueLoadable(asyncGetPosts)
-  console.log(posts)
+
+  if (posts.state !== 'hasValue') return null
   return (
     <S.Container>
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
+      {posts.contents?.map((post) => (
+        <PostCard key={post._id} post={post} />
+      ))}
     </S.Container>
   )
 }

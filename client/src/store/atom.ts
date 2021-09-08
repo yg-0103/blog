@@ -1,6 +1,6 @@
 import { atom, selector } from 'recoil'
 import { getPosts } from './api'
-import { Post } from './type'
+import { Post, PostResponse } from './type'
 
 export enum MODE {
   READ = '글 쓰기',
@@ -55,7 +55,7 @@ export const postState = selector<Post>({
   }),
 })
 
-export const asyncGetPosts = selector<Post[]>({
+export const asyncGetPosts = selector({
   key: 'AsyncGetPosts',
   get: async ({}) => {
     const posts = await getPosts()

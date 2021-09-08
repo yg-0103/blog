@@ -17,7 +17,7 @@ export const addPost = async (payload: T.Post) => {
 
 export const getPosts = async () => {
   try {
-    const { data: post } = await API.get('/post')
+    const { data: post } = await API.get<T.PostResponse[]>('/post')
     return post
   } catch (e) {
     console.error(e)
