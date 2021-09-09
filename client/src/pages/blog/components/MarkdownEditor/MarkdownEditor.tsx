@@ -26,7 +26,7 @@ export default function MarkdownEditor() {
     }
 
     const instance = editorRef.current.getInstance()
-    setContent(instance.getHTML())
+    setContent(instance.getMarkdown())
   }
 
   return (
@@ -35,7 +35,7 @@ export default function MarkdownEditor() {
       <EditorWithForwardedRef
         previewStyle={'vertical'}
         height="600px"
-        initialEditType="markdown"
+        initialEditType="wysiwyg"
         ref={editorRef}
         onChange={handleChange}
       />

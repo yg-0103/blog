@@ -1,4 +1,5 @@
 import { makeGradient, multipleLineEllipsis } from '@styles/styleUtill'
+import ReactMarkdown from 'react-markdown'
 import styled from 'styled-components'
 
 export const Container = styled.li`
@@ -32,7 +33,7 @@ export const PostTitle = styled.h3`
   font-size: 2rem;
 `
 
-export const PostContent = styled.p`
+export const PostContent = styled(ReactMarkdown)`
   margin-top: 1rem;
   font-size: 1.6rem;
 

@@ -16,10 +16,21 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
   console.log(req.body);
   try {
-    const post = await Post.create(req.body);
-    res.status(201).send(post);
+    const posts = await Post.create(req.body);
+    res.status(201).send(posts);
   } catch (e) {
     res.status(404).send(e);
+    console.error(e);
+  }
+});
+
+router.get("/:postid", async (req, res) => {
+  try {
+    const post = await Post.findOneById(req.params.postId);
+    if (!post) return res.send({ err: "Post not found" });
+    res.status(200).send(post);
+  } catch (e) {
+    res.status(500).send(e);
     console.error(e);
   }
 });
