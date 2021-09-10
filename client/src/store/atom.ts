@@ -1,5 +1,5 @@
-import { atom, selector } from 'recoil'
-import { getPosts } from './api'
+import { atom, selector, selectorFamily } from 'recoil'
+import { getPost, getPosts } from './api'
 import { Post, PostResponse } from './type'
 
 export enum MODE {
@@ -61,4 +61,14 @@ export const asyncGetPosts = selector({
     const posts = await getPosts()
     return posts
   },
+})
+
+export const asyncGetPost = selectorFamily({
+  key: 'AsyncGetPost',
+  get:
+    (postId: string) =>
+    async ({}) => {
+      const post = await getPost(postId)
+      return post
+    },
 })

@@ -1,18 +1,24 @@
 import Button from '@components/Button'
+import { getDate } from 'src/utill/getDate'
 import * as S from './PostHeader.style'
 
-export default function PostHeader() {
+interface Props {
+  id: number
+  title: string
+  createdAt: string
+  hashTags: string[]
+}
+
+export default function PostHeader({ title, createdAt, hashTags }: Props) {
   return (
     <S.Container>
-      <S.PostTitle>포스트 제목</S.PostTitle>
+      <S.PostTitle>{title}</S.PostTitle>
       <S.Author>김연구</S.Author>
-      <S.TimeStemp>5일 전</S.TimeStemp>
+      <S.TimeStemp>{getDate(createdAt)}</S.TimeStemp>
       <S.HashTagWrapper>
-        <S.HashTag>리액트</S.HashTag>
-        <S.HashTag>타입스크립트</S.HashTag>
-        <S.HashTag>익스프레스</S.HashTag>
-        <S.HashTag>몽고디비</S.HashTag>
-        <S.HashTag>넥스트제이에스</S.HashTag>
+        {hashTags.map((hashTag) => (
+          <S.HashTag>{hashTag}</S.HashTag>
+        ))}
       </S.HashTagWrapper>
       <S.ButtonWrapper>
         <Button>수정</Button>

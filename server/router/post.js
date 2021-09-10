@@ -24,7 +24,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.get("/:postid", async (req, res) => {
+router.get("/:postId", async (req, res) => {
   try {
     const post = await Post.findOneById(req.params.postId);
     if (!post) return res.send({ err: "Post not found" });
