@@ -6,7 +6,6 @@ const API = axios.create({
 })
 
 export const addPost = async (payload: T.Post) => {
-  console.log(333)
   try {
     const { data: post } = await API.post('/post', payload)
     return post

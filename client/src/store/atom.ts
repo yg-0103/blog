@@ -55,12 +55,12 @@ export const postState = selector<Post>({
   }),
 })
 
-export const asyncGetPosts = selector({
+export const asyncGetPosts = atom({
   key: 'AsyncGetPosts',
-  get: async ({}) => {
-    const posts = await getPosts()
-    return posts
-  },
+  default: selector({
+    key: 'AsyncGetPost/Default',
+    get: () => getPosts(),
+  }),
 })
 
 export const asyncGetPost = selectorFamily({

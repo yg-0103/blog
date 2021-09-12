@@ -7,5 +7,5 @@ export interface Post {
 export interface PostResponse extends Post {
   createdAt: string
   updateAt: string
-  _id: number
+  _id: string
 }

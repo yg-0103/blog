@@ -35,4 +35,14 @@ router.get("/:postId", async (req, res) => {
   }
 });
 
+router.delete("/:postId", async (req, res) => {
+  try {
+    const post = await Post.deleteOne({ filter: req.params.postId });
+    if (!post) return res.send({ err: "Post not found" });
+    res.status(200).send(post);
+  } catch (e) {
+    res.status(500).send(e);
+    console.error(e);
+  }
+});
 module.exports = router;

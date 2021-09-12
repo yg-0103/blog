@@ -1,10 +1,16 @@
 import { asyncGetPosts } from '@store/atom'
-import { useRecoilValueLoadable } from 'recoil'
+import { useEffect } from 'react'
+import { useRecoilValueLoadable, useResetRecoilState } from 'recoil'
 import PostCard from '../PostCard'
 import * as S from './PostList.style'
 
 export default function PostList() {
   const posts = useRecoilValueLoadable(asyncGetPosts)
+  const reset = useResetRecoilState(asyncGetPosts)
+
+  useEffect(() => {
+    reset()
+  }, [])
 
   if (posts.state !== 'hasValue') return null
   return (
