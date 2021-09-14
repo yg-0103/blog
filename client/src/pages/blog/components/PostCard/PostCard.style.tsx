@@ -34,6 +34,9 @@ export const PostTitle = styled.h3`
 `
 
 export const PostContent = styled(ReactMarkdown)`
+  * {
+    display: inline;
+  }
   margin-top: 1rem;
   font-size: 1.6rem;
 

@@ -16,7 +16,13 @@ const EditorWithForwardedRef = React.forwardRef<EditorType | undefined, EditorPr
   (props, ref) => <Editor {...props} forwardedRef={ref as React.MutableRefObject<EditorType>} />
 )
 
-export default function MarkdownEditor() {
+export default function MarkdownEditor({
+  content,
+  hashTags,
+}: {
+  content?: string
+  hashTags?: string[]
+}) {
   const editorRef = useRef<EditorType>()
   const setContent = useSetRecoilState(blogContent)
 
@@ -31,13 +37,14 @@ export default function MarkdownEditor() {
 
   return (
     <S.Container>
-      <HashTagInput />
+      <HashTagInput defaultHashTags={hashTags} />
       <EditorWithForwardedRef
         previewStyle={'vertical'}
         height="600px"
-        initialEditType="wysiwyg"
+        initialEditType="markdown"
         ref={editorRef}
         onChange={handleChange}
+        initialValue={content}
       />
     </S.Container>
   )

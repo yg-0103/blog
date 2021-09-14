@@ -1,10 +1,11 @@
-import { atom, selector, selectorFamily } from 'recoil'
+import { atom, atomFamily, selector, selectorFamily } from 'recoil'
 import { getPost, getPosts } from './api'
-import { Post, PostResponse } from './type'
+import { Post } from './type'
 
 export enum MODE {
   READ = '글 쓰기',
   WRITE = '저장',
+  EDIT = '수정',
 }
 
 export const blogMode = atom({
@@ -55,12 +56,21 @@ export const postState = selector<Post>({
   }),
 })
 
-export const asyncGetPosts = atom({
+export const _postTrigger = atomFamily({
+  key: 'PostTrigger',
+  default: Date.now(),
+})
+
+export const asyncGetPosts = selector({
   key: 'AsyncGetPosts',
-  default: selector({
-    key: 'AsyncGetPost/Default',
-    get: () => getPosts(),
-  }),
+  get: async ({ get }) => {
+    get(_postTrigger('asyncGetPosts'))
+    const posts = await getPosts()
+    return posts
+  },
+  set: ({ set }) => {
+    set(_postTrigger('asyncGetPosts'), Date.now())
+  },
 })
 
 export const asyncGetPost = selectorFamily({
@@ -68,6 +78,7 @@ export const asyncGetPost = selectorFamily({
   get:
     (postId: string) =>
     async ({}) => {
+      // if (postId) return
       const post = await getPost(postId)
       return post
     },

@@ -7,9 +7,10 @@ import * as S from './Input.style'
 const placeholder: Record<MODE, string> = {
   [MODE.READ]: '검색어를 입력해주세요',
   [MODE.WRITE]: '제목을 입력해주세요',
+  [MODE.EDIT]: '제목을 입력해주세요',
 }
 
-export default function Input() {
+export default function Input({ title }: { title?: string }) {
   const setTitle = useSetRecoilState(blogTitle)
   const setSearch = useSetRecoilState(blogSearch)
   const value = useRecoilValue(blogInputValue)
@@ -18,7 +19,7 @@ export default function Input() {
   const handleChangeValue = (e: ChangeEvent<HTMLInputElement>) => {
     mode === MODE.READ ? setSearch(e.target.value) : setTitle(e.target.value)
   }
-
+  console.log(title)
   useEffect(() => {
     setTitle('')
     setSearch('')
@@ -30,6 +31,7 @@ export default function Input() {
         placeholder={placeholder[mode]}
         onChange={handleChangeValue}
         value={value}
+        defaultValue={title}
         onFocus={(e) => {
           e.target.select()
         }}

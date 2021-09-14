@@ -7,16 +7,17 @@ import { useRecoilValueLoadable } from 'recoil'
 import { asyncGetPost } from '@store/atom'
 export default function PostDetail() {
   const { query } = useRouter()
+  console.log(query)
   const post = useRecoilValueLoadable(asyncGetPost(query.postId as string))
-
   if (post.state !== 'hasValue' || !post.contents) return null
 
-  const { _id, title, hashTags, createdAt } = post.contents
+  const { _id, title, hashTags, content, createdAt } = post.contents
+
   return (
     <Layout>
       <CS.Section>
         <PostHeader id={_id} title={title} hashTags={hashTags} createdAt={createdAt} />
-        <PostBody />
+        <PostBody content={content} />
       </CS.Section>
     </Layout>
   )

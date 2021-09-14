@@ -1,6 +1,8 @@
 import Button from '@components/Button'
 import { deletePost } from '@store/api'
+import { blogMode, MODE } from '@store/atom'
 import { useRouter } from 'next/dist/client/router'
+import { useSetRecoilState } from 'recoil'
 import { getDate } from 'src/utill/getDate'
 import * as S from './PostHeader.style'
 
@@ -13,10 +15,15 @@ interface Props {
 
 export default function PostHeader({ id, title, createdAt, hashTags }: Props) {
   const router = useRouter()
-
+  const setMode = useSetRecoilState(blogMode)
   const handleRemovePost = async () => {
     await deletePost(id)
     router.back()
+  }
+
+  const handleEditPost = () => {
+    router.push(`/blog#${id}`)
+    setMode(MODE.WRITE)
   }
 
   return (
@@ -30,7 +37,7 @@ export default function PostHeader({ id, title, createdAt, hashTags }: Props) {
         ))}
       </S.HashTagWrapper>
       <S.ButtonWrapper>
-        <Button>수정</Button>
+        <Button onClick={handleEditPost}>수정</Button>
         <Button onClick={handleRemovePost}>삭제</Button>
       </S.ButtonWrapper>
     </S.Container>

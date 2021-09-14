@@ -1,9 +1,9 @@
 import { blogHashTag } from '@store/atom'
-import { KeyboardEvent, useRef } from 'react'
+import { KeyboardEvent, useEffect, useRef } from 'react'
 import { useRecoilState } from 'recoil'
 import * as S from './HashTagInput.style'
 
-export default function HashTagInput() {
+export default function HashTagInput({ defaultHashTags = [] }: { defaultHashTags?: string[] }) {
   const [hashTags, setHashTags] = useRecoilState(blogHashTag)
   const ref = useRef<HTMLInputElement>(null)
 
@@ -12,6 +12,10 @@ export default function HashTagInput() {
     setHashTags((prev) => [...prev, ref.current!.value])
     ref.current.value = ''
   }
+
+  useEffect(() => {
+    setHashTags((prev) => (prev.length ? prev : defaultHashTags))
+  }, [])
 
   return (
     <S.Container>

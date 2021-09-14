@@ -6,13 +6,14 @@ import * as S from './PostList.style'
 
 export default function PostList() {
   const posts = useRecoilValueLoadable(asyncGetPosts)
-  const reset = useResetRecoilState(asyncGetPosts)
+  const refetch = useResetRecoilState(asyncGetPosts)
 
   useEffect(() => {
-    reset()
+    refetch()
   }, [])
 
   if (posts.state !== 'hasValue') return null
+
   return (
     <S.Container>
       {posts.contents?.map((post) => (

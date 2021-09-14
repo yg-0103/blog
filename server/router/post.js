@@ -4,7 +4,6 @@ const Post = require("../models/post");
 router.get("/", async (req, res) => {
   try {
     const posts = await Post.findAll();
-
     res.status(200).send(posts || []);
   } catch (e) {
     res.status(404).send(e);
@@ -14,7 +13,6 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  console.log(req.body);
   try {
     const posts = await Post.create(req.body);
     res.status(201).send(posts);
@@ -36,8 +34,9 @@ router.get("/:postId", async (req, res) => {
 });
 
 router.delete("/:postId", async (req, res) => {
+  console.log(req.params.postId);
   try {
-    const post = await Post.deleteOne({ filter: req.params.postId });
+    const post = await Post.deleteOne({ _id: req.params.postId });
     if (!post) return res.send({ err: "Post not found" });
     res.status(200).send(post);
   } catch (e) {
