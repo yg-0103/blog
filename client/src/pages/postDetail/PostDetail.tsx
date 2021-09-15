@@ -3,13 +3,13 @@ import Layout from 'src/Layout/Layout'
 import * as CS from './common.style'
 import PostBody from './components/PostBody'
 import { useRouter } from 'next/dist/client/router'
-import { useRecoilValueLoadable } from 'recoil'
+import { useRecoilValue, useRecoilValueLoadable } from 'recoil'
 import { asyncGetPost } from '@store/atom'
 export default function PostDetail() {
   const { query } = useRouter()
-  console.log(query)
   const post = useRecoilValueLoadable(asyncGetPost(query.postId as string))
-  if (post.state !== 'hasValue' || !post.contents) return null
+
+  if (post.state !== 'hasValue' && !post.contents) return null
 
   const { _id, title, hashTags, content, createdAt } = post.contents
 

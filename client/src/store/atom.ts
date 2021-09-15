@@ -43,6 +43,8 @@ export const blogInputValue = selector({
         return get(blogSearch)
       case MODE.WRITE:
         return get(blogTitle)
+      case MODE.EDIT:
+        return get(blogTitle)
     }
   },
 })
@@ -73,13 +75,15 @@ export const asyncGetPosts = selector({
   },
 })
 
-export const asyncGetPost = selectorFamily({
+export const asyncGetPost = atomFamily({
   key: 'AsyncGetPost',
-  get:
-    (postId: string) =>
-    async ({}) => {
-      // if (postId) return
-      const post = await getPost(postId)
-      return post
-    },
+  default: selectorFamily({
+    key: 'AsycnGetPost/Default',
+    get:
+      (postId: string) =>
+      ({ get }) => {
+        const posts = get(asyncGetPosts)
+        return posts?.find((post) => post._id === postId)
+      },
+  }),
 })

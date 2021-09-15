@@ -1,4 +1,4 @@
-import { blogInputValue, blogMode, blogSearch, blogTitle, MODE } from '@store/atom'
+import { asyncGetPost, blogInputValue, blogMode, blogSearch, blogTitle, MODE } from '@store/atom'
 import { FocusEventHandler, useEffect } from 'react'
 import { ChangeEvent } from 'react'
 import { useRecoilValue, useSetRecoilState } from 'recoil'
@@ -19,12 +19,12 @@ export default function Input({ title }: { title?: string }) {
   const handleChangeValue = (e: ChangeEvent<HTMLInputElement>) => {
     mode === MODE.READ ? setSearch(e.target.value) : setTitle(e.target.value)
   }
-  console.log(title)
-  useEffect(() => {
-    setTitle('')
-    setSearch('')
-  }, [mode])
 
+  useEffect(() => {
+    setTitle(title || '')
+    setSearch('')
+  }, [mode, title])
+  console.log(value, title)
   return (
     <S.Container>
       <S.Input

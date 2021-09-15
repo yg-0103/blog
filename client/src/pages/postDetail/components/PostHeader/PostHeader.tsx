@@ -18,6 +18,7 @@ export default function PostHeader({ id, title, createdAt, hashTags }: Props) {
   const setMode = useSetRecoilState(blogMode)
   const handleRemovePost = async () => {
     await deletePost(id)
+    setMode(MODE.READ)
     router.back()
   }
 
