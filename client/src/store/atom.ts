@@ -1,6 +1,6 @@
 import { atom, atomFamily, selector, selectorFamily } from 'recoil'
 import { getPost, getPosts } from './api'
-import { Post } from './type'
+import { Post, PostResponse } from './type'
 
 export enum MODE {
   READ = '글 쓰기',
@@ -75,15 +75,13 @@ export const asyncGetPosts = selector({
   },
 })
 
-export const asyncGetPost = atomFamily({
+export const asyncGetPost = selectorFamily({
   key: 'AsyncGetPost',
-  default: selectorFamily({
-    key: 'AsycnGetPost/Default',
-    get:
-      (postId: string) =>
-      ({ get }) => {
-        const posts = get(asyncGetPosts)
-        return posts?.find((post) => post._id === postId)
-      },
-  }),
+  get:
+    (postId: string) =>
+    ({ get }) => {
+      const postList = get(asyncGetPosts)
+
+      return postList?.find((post) => post._id === postId)
+    },
 })

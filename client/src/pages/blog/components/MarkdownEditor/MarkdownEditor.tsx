@@ -34,6 +34,7 @@ export default function MarkdownEditor({
     const instance = editorRef.current.getInstance()
     setContent(instance.getMarkdown())
   }
+
   return (
     <S.Container>
       <HashTagInput defaultHashTags={hashTags} />

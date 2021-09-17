@@ -14,7 +14,7 @@ export default function HashTagInput({ defaultHashTags = [] }: { defaultHashTags
   }
 
   useEffect(() => {
-    setHashTags((prev) => (prev.length ? prev : defaultHashTags))
+    setHashTags((prev) => defaultHashTags || prev)
   }, [])
 
   return (
