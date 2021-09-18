@@ -22,6 +22,7 @@ export default function Blog() {
   const handleChangeMode = async () => {
     setMode((prev) => (prev === MODE.READ ? MODE.WRITE : MODE.READ))
     mode === MODE.WRITE && (await API.addPost(postData))
+    mode === MODE.EDIT && (await API.updatePost(getHash(router.asPath), postData))
     setContent('')
     setHashTags([])
   }
@@ -30,7 +31,6 @@ export default function Blog() {
     setMode(MODE.READ)
     router.replace('/blog')
   }
-
   useEffect(() => {
     getHash(router.asPath) ? setMode(MODE.EDIT) : setMode(MODE.READ)
   }, [])

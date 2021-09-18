@@ -33,8 +33,23 @@ router.get("/:postId", async (req, res) => {
   }
 });
 
+router.patch("/:postId", async (req, res) => {
+  try {
+    const post = await Post.findOneAndUpdate(
+      { _id: req.params.postId },
+      req.body,
+      { new: true }
+    );
+
+    if (!post) return res.send({ err: "Post not found" });
+    res.status(200).send(post);
+  } catch (e) {
+    res.status(404).send(e);
+    console.error(e);
+  }
+});
+
 router.delete("/:postId", async (req, res) => {
-  console.log(req.params.postId);
   try {
     const post = await Post.deleteOne({ _id: req.params.postId });
     if (!post) return res.send({ err: "Post not found" });
@@ -44,4 +59,5 @@ router.delete("/:postId", async (req, res) => {
     console.error(e);
   }
 });
+
 module.exports = router;

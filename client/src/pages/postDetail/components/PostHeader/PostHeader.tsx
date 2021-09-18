@@ -34,7 +34,7 @@ export default function PostHeader({ id, title, createdAt, hashTags }: Props) {
       <S.TimeStemp>{getDate(createdAt)}</S.TimeStemp>
       <S.HashTagWrapper>
         {hashTags?.map((hashTag) => (
-          <S.HashTag>{hashTag}</S.HashTag>
+          <S.HashTag key={hashTag}>{hashTag}</S.HashTag>
         ))}
       </S.HashTagWrapper>
       <S.ButtonWrapper>

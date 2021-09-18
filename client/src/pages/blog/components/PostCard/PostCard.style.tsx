@@ -37,6 +37,13 @@ export const PostContent = styled(ReactMarkdown)`
   * {
     display: inline;
   }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
   margin-top: 1rem;
   font-size: 1.6rem;
 

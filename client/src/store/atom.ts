@@ -1,6 +1,6 @@
 import { atom, atomFamily, selector, selectorFamily } from 'recoil'
-import { getPost, getPosts } from './api'
-import { Post, PostResponse } from './type'
+import { getPosts } from './api'
+import { Post } from './type'
 
 export enum MODE {
   READ = '글 쓰기',

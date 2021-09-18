@@ -24,7 +24,7 @@ export default function Input({ title }: { title?: string }) {
     setTitle(title || '')
     setSearch('')
   }, [mode, title])
-  console.log(value, title)
+
   return (
     <S.Container>
       <S.Input

@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Editor as EditorType, EditorProps } from '@toast-ui/react-editor'
 import { TuiEditorWithForwardedProps } from './MarkdownEditorWrapper'
 import '@toast-ui/editor/dist/toastui-editor.css'
@@ -34,6 +34,10 @@ export default function MarkdownEditor({
     const instance = editorRef.current.getInstance()
     setContent(instance.getMarkdown())
   }
+
+  useEffect(() => {
+    setContent(content || '')
+  }, [])
 
   return (
     <S.Container>

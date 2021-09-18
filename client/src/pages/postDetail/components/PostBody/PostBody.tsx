@@ -15,7 +15,7 @@ export default function PostBody({ content }: Props) {
             const match = /language-(\w+)/.exec(className || '')
             return !inline && match ? (
               <SyntaxHighlighter
-                children={String(children).replace(/\n$/, '')}
+                children={String(children)?.replace(/\n$/, '')}
                 style={materialDark}
                 language="js"
                 PreTag="div"

@@ -2,7 +2,7 @@ import axios from 'axios'
 import * as T from './type'
 
 const API = axios.create({
-  baseURL: 'http://localhost:4500',
+  baseURL: 'http://localhost:5500',
 })
 
 export const addPost = async (payload: T.Post) => {
@@ -23,18 +23,17 @@ export const getPosts = async () => {
   }
 }
 
-export const getPost = async (postId: string) => {
+export const deletePost = async (postId: string) => {
   try {
-    const { data: post } = await API.get<T.PostResponse>(`/post/${postId}`)
-    return post
+    await API.delete(`/post/${postId}`)
   } catch (e) {
     console.error(e)
   }
 }
 
-export const deletePost = async (postId: string) => {
+export const updatePost = async (postId: string, payload: T.Post) => {
   try {
-    await API.delete(`/post/${postId}`)
+    await API.patch(`/post/${postId}`, payload)
   } catch (e) {
     console.error(e)
   }
