@@ -1,7 +1,7 @@
 import { useRouter } from 'next/dist/client/router'
 import * as S from './Navigation.style'
 import Link from 'next/link'
-const navItems = ['home', 'about', 'blog', 'contact']
+const navItems = ['home', 'about', 'blog', 'contact', 'voca']
 
 export default function NavigationDesktop() {
   const { pathname } = useRouter()
