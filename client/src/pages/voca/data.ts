@@ -58,7 +58,7 @@ export const VOCA_DATA = [
   },
   {
     voca: 'intrigue',
-    mean: ['끌다, 음모를 꾸미다'],
+    mean: ['끌다', '음모를 꾸미다'],
   },
   {
     voca: 'luxuriant',
@@ -78,7 +78,7 @@ export const VOCA_DATA = [
   },
   {
     voca: 'outbreak',
-    mean: ['만연, 창궐, 폭발'],
+    mean: ['만연', '창궐', '폭발'],
   },
   {
     voca: 'periodically',
@@ -207,5 +207,41 @@ export const VOCA_DATA = [
   {
     voca: 'loathe',
     mean: ['혐오하다'],
+  },
+  {
+    voca: 'mimic',
+    mean: ['모방하다'],
+  },
+  {
+    voca: 'model',
+    mean: ['견본'],
+  },
+  {
+    voca: 'observe',
+    mean: ['관찰하다', '준수하다'],
+  },
+  {
+    voca: 'plentiful',
+    mean: ['풍부한'],
+  },
+  {
+    voca: 'preoccupied',
+    mean: ['몰두한'],
+  },
+  {
+    voca: 'property',
+    mean: ['자산', '특성'],
+  },
+  {
+    voca: 'recurring',
+    mean: ['되풀이되는'],
+  },
+  {
+    voca: 'rooted',
+    mean: ['뿌리 깊은', '정착한'],
+  },
+  {
+    voca: 'thoroughly',
+    mean: ['완전히', '철저히'],
   },
 ]

@@ -4,7 +4,7 @@ import * as CS from './common.style'
 import PostBody from './components/PostBody'
 import { useRouter } from 'next/dist/client/router'
 import { useRecoilValueLoadable } from 'recoil'
-import { asyncGetPost } from '@store/atom'
+import { asyncGetPost } from '@store/blog/atom'
 export default function PostDetail() {
   const { query } = useRouter()
   const post = useRecoilValueLoadable(asyncGetPost(query.postId as string))

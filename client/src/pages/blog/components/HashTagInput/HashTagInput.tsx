@@ -1,4 +1,4 @@
-import { blogHashTag } from '@store/atom'
+import { blogHashTag } from '@store/blog/atom'
 import { KeyboardEvent, useEffect, useRef } from 'react'
 import { useRecoilState } from 'recoil'
 import * as S from './HashTagInput.style'

@@ -1,9 +1,9 @@
 import Button from '@components/Button'
-import { deletePost } from '@store/api'
-import { blogMode, MODE } from '@store/atom'
+import { deletePost } from '@store/blog/api'
+import { blogMode, MODE } from '@store/blog/atom'
 import { useRouter } from 'next/dist/client/router'
 import { useSetRecoilState } from 'recoil'
-import { getDate } from 'src/utill/getDate'
+import { getDate } from '@utils/getDate'
 import * as S from './PostHeader.style'
 
 interface Props {

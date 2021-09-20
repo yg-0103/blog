@@ -5,7 +5,7 @@ import { TuiEditorWithForwardedProps } from './MarkdownEditorWrapper'
 import '@toast-ui/editor/dist/toastui-editor.css'
 import * as S from './MarkdownEditor.style'
 import { useSetRecoilState } from 'recoil'
-import { blogContent } from '@store/atom'
+import { blogContent } from '@store/blog/atom'
 import HashTagInput from '../HashTagInput'
 
 const Editor = dynamic<TuiEditorWithForwardedProps>(() => import('./MarkdownEditorWrapper'), {

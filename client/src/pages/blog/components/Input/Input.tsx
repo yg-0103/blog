@@ -1,4 +1,11 @@
-import { asyncGetPost, blogInputValue, blogMode, blogSearch, blogTitle, MODE } from '@store/atom'
+import {
+  asyncGetPost,
+  blogInputValue,
+  blogMode,
+  blogSearch,
+  blogTitle,
+  MODE,
+} from '@store/blog/atom'
 import { FocusEventHandler, useEffect } from 'react'
 import { ChangeEvent } from 'react'
 import { useRecoilValue, useSetRecoilState } from 'recoil'

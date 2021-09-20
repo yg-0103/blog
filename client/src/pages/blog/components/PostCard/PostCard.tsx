@@ -1,5 +1,5 @@
-import { PostResponse } from '@store/type'
-import { getDate } from 'src/utill/getDate'
+import { PostResponse } from '@store/blog/type'
+import { getDate } from '@utils/getDate'
 import * as S from './PostCard.style'
 import Link from 'next/link'
 interface Props {

@@ -1,4 +1,4 @@
-import { asyncGetPosts } from '@store/atom'
+import { asyncGetPosts } from '@store/blog/atom'
 import { useEffect } from 'react'
 import { useRecoilValueLoadable, useResetRecoilState } from 'recoil'
 import PostCard from '../PostCard'
