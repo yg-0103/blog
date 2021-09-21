@@ -30,7 +30,7 @@ export default function VocaField({ voca }: Props) {
       {getType(voca.answer) === 'string' ? (
         <VocaInput answer={voca.answer} />
       ) : (
-        (voca.answer as string[]).map((answer) => <VocaInput answer={answer} />)
+        (voca.answer as string[]).map(() => <VocaInput answer={voca.answer} />)
       )}
       <Button style={{ width: '9rem', fontSize: '1.5rem' }} onClick={handleChangeShowAnswer}>
         정답 보기
