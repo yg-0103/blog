@@ -12,26 +12,33 @@ export const selectedTab = atom({
   default: TAB_ITEM.SPELL,
 })
 
+export const quizCount = atom({
+  key: 'QuizCount',
+  default: 10,
+})
+
 export const vocaList = selector({
   key: 'VocaList',
   get: ({ get }) => {
     const activeTab = get(selectedTab)
+    const count = get(quizCount)
 
+    const vocaList = VOCA_DATA.sort(() => Math.random() - 0.5).slice(0, count)
     switch (activeTab) {
       case TAB_ITEM.MEAN: {
-        return VOCA_DATA.map((voca) => ({
+        return vocaList.map((voca) => ({
           quiz: voca.voca,
           answer: voca.mean,
         }))
       }
       case TAB_ITEM.SPELL: {
-        return VOCA_DATA.map((voca) => ({
+        return vocaList.map((voca) => ({
           quiz: voca.mean,
           answer: voca.voca,
         }))
       }
       case TAB_ITEM.RANDOM: {
-        return VOCA_DATA.map((voca) => {
+        return vocaList.map((voca) => {
           const random = Math.random()
 
           return random > 0.5

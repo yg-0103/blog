@@ -7,12 +7,10 @@ import * as S from './VocaBox.style'
 export default function VocaBox() {
   const vocaData = useRecoilValue(vocaList)
 
-  console.log(vocaData)
-
   return (
     <S.Container>
-      {vocaData.map((voca) => (
-        <VocaField voca={voca} />
+      {vocaData.map((voca, idx) => (
+        <VocaField key={idx} voca={voca} />
       ))}
     </S.Container>
   )

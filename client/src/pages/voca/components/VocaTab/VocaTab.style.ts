@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  margin: 5rem auto;
   width: fit-content;
   border-radius: 1rem;
   overflow: hidden;
@@ -11,10 +10,11 @@ export const Container = styled.div`
 `
 
 export const TabItem = styled.div<{ active: boolean }>`
+  padding: 2rem 4rem;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 2rem 4rem;
   background-color: #ccc;
+  cursor: pointer;
 
   & + & {
     border-left: 1px solid #ccc;
