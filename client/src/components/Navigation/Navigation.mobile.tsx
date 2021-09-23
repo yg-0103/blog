@@ -15,8 +15,8 @@ export default function NavigationMobile({ activeMenu, handleActive }: Props) {
   return (
     <S.Nav active={activeMenu}>
       {navItems.map((navItem) => (
-        <Link href={`/${navItem}`}>
-          <S.NavItem key={navItem} onClick={handleActive} active={pathname.includes(navItem)}>
+        <Link href={`/${navItem}`} key={navItem} passHref>
+          <S.NavItem onClick={handleActive} active={pathname.includes(navItem)}>
             {navItem.replace(/./, (letter) => letter.toUpperCase())}
           </S.NavItem>
         </Link>

@@ -9,7 +9,7 @@ export default function NavigationDesktop() {
   return (
     <S.Nav>
       {navItems.map((navItem) => (
-        <Link href={`/${navItem}`} key={navItem}>
+        <Link href={`/${navItem}`} key={navItem} passHref>
           <S.NavItem active={pathname.includes(navItem)}>
             {navItem.replace(/./, (letter) => letter.toUpperCase())}
           </S.NavItem>

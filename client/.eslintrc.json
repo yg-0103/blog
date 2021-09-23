@@ -1,14 +1,15 @@
 {
-  "extends": ["next/core-web-vitals", "next/babel"],
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "@next/next/no-img-element": "off",
     "react/display-name": "off",
-    "no-unused-vars": "error",
-
-    "no-console": "warn",
     "no-plusplus": "off",
     "no-shadow": "off",
     "vars-on-top": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-underscore-dangle": "off", // var _foo;
     "comma-dangle": "off",
     "func-names": "off", // setTimeout(function () {}, 0);

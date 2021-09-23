@@ -1,7 +1,6 @@
 import { Button } from '@components/Button/Button.style'
-import { Voca } from '@pages/voca/data'
 import { getType } from '@utils/getType'
-import { ChangeEvent, useState } from 'react'
+import { useState } from 'react'
 import VocaInput from '../VocaInput'
 import * as S from './VocaField.style'
 

@@ -1,4 +1,3 @@
-import { VOCA_DATA } from '@pages/voca/data'
 import { vocaList } from '@store/voca/atom'
 import { useRecoilValue } from 'recoil'
 import VocaField from '../VocaField'

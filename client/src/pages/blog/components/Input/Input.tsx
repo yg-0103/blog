@@ -1,12 +1,5 @@
-import {
-  asyncGetPost,
-  blogInputValue,
-  blogMode,
-  blogSearch,
-  blogTitle,
-  MODE,
-} from '@store/blog/atom'
-import { FocusEventHandler, useEffect } from 'react'
+import { blogInputValue, blogMode, blogSearch, blogTitle, MODE } from '@store/blog/atom'
+import { useEffect } from 'react'
 import { ChangeEvent } from 'react'
 import { useRecoilValue, useSetRecoilState } from 'recoil'
 import * as S from './Input.style'
@@ -30,7 +23,7 @@ export default function Input({ title }: { title?: string }) {
   useEffect(() => {
     setTitle(title || '')
     setSearch('')
-  }, [mode, title])
+  }, [mode, setSearch, setTitle, title])
 
   return (
     <S.Container>

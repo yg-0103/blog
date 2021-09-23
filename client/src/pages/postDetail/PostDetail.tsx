@@ -5,12 +5,14 @@ import PostBody from './components/PostBody'
 import { useRouter } from 'next/dist/client/router'
 import { useRecoilValueLoadable } from 'recoil'
 import { asyncGetPost } from '@store/blog/atom'
-export default function PostDetail() {
+import withCSR from 'src/hoc/withCSR'
+
+function PostDetail() {
   const { query } = useRouter()
   const post = useRecoilValueLoadable(asyncGetPost(query.postId as string))
 
   if (post.state !== 'hasValue' && !post.contents) return null
-  const { _id, title, hashTags, content, createdAt } = post.contents
+  const { _id, title, hashTags, content, createdAt } = post.contents || {}
 
   return (
     <Layout>
@@ -21,3 +23,5 @@ export default function PostDetail() {
     </Layout>
   )
 }
+
+export default withCSR(PostDetail)

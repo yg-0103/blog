@@ -10,15 +10,14 @@ const TabItem: Record<TAB_ITEM, string> = {
 
 export default function VocaTab() {
   const [activeTab, setActiveTab] = useRecoilState(selectedTab)
-
   const handleChangeActiveTab = (tab: TAB_ITEM) => {
     setActiveTab(tab)
   }
-
   return (
     <S.Container>
       {Object.keys(TabItem).map((tab) => (
         <S.TabItem
+          key={tab}
           active={activeTab === tab}
           onClick={() => handleChangeActiveTab(tab as TAB_ITEM)}
         >

@@ -8,7 +8,7 @@ interface Props {
 
 export default function PostCard({ post }: Props) {
   return (
-    <Link href={`/blog/${post._id}`}>
+    <Link href={`/blog/${post._id}`} passHref>
       <S.Container>
         <S.ImageWrapper>
           <img src="" />
