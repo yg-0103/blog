@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components'
 
 export const Header = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 `
 
@@ -11,7 +15,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   max-width: 100rem;
   width: 100%;
-  height: 8rem;
+  height: 5rem;
   margin: 0 auto;
   padding: 0 2rem;
 `
@@ -23,8 +27,8 @@ export const HamburgerButton = styled.button<{ active: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 
   &::before,
   &::after,
@@ -32,7 +36,7 @@ export const HamburgerButton = styled.button<{ active: boolean }>`
     content: '';
     display: block;
     width: 100%;
-    height: 0.7rem;
+    height: 0.4rem;
     background: #36c6ff;
     border-radius: 0.2rem;
     transition: 0.3s;

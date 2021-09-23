@@ -10,8 +10,8 @@ export const Container = styled.div`
 `
 
 export const TabItem = styled.div<{ active: boolean }>`
-  padding: 2rem 4rem;
-  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
   background-color: #ccc;
   cursor: pointer;

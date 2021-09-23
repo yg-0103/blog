@@ -16,31 +16,38 @@ export default function VocaField({ voca }: Props) {
 
   const handleChangeShowAnswer = () => {
     setShowAnswer(!showAnswer)
-    setTimeout(() => setShowAnswer(false), 2000)
+    setTimeout(() => setShowAnswer(false), 1000)
   }
 
   return (
     <S.VocaField>
-      {getType(voca.quiz) === 'string' ? (
-        <S.Vocabulary>{voca.quiz}</S.Vocabulary>
-      ) : (
-        (voca.quiz as string[]).map((quiz) => <S.Vocabulary key={quiz}>{quiz}</S.Vocabulary>)
-      )}
-      {getType(voca.answer) === 'string' ? (
-        <VocaInput answer={voca.answer} />
-      ) : (
-        (voca.answer as string[]).map((answer) => <VocaInput key={answer} answer={voca.answer} />)
-      )}
-      <Button style={{ width: '9rem', fontSize: '1.5rem' }} onClick={handleChangeShowAnswer}>
-        정답 보기
-      </Button>
-      <S.AnswerBox show={showAnswer}>
-        {getType(voca.answer) === 'string' ? (
-          <S.Answer>{voca.answer}</S.Answer>
+      <S.QuizWrapper>
+        {getType(voca.quiz) === 'string' ? (
+          <S.Quiz>{voca.quiz}</S.Quiz>
         ) : (
-          (voca.answer as string[]).map((answer) => <S.Answer key={answer}>{answer}</S.Answer>)
+          (voca.quiz as string[]).map((quiz) => <S.Quiz key={quiz}>{quiz}</S.Quiz>)
         )}
-      </S.AnswerBox>
+      </S.QuizWrapper>
+      <S.AnswerWrapper>
+        {getType(voca.answer) === 'string' ? (
+          <VocaInput answer={voca.answer} />
+        ) : (
+          (voca.answer as string[]).map((answer) => <VocaInput key={answer} answer={voca.answer} />)
+        )}
+        <Button
+          style={{ width: '6rem', height: '3rem', fontSize: '1.2rem' }}
+          onClick={handleChangeShowAnswer}
+        >
+          정답 보기
+        </Button>
+        <S.AnswerBox show={showAnswer}>
+          {getType(voca.answer) === 'string' ? (
+            <S.Answer>{voca.answer}</S.Answer>
+          ) : (
+            (voca.answer as string[]).map((answer) => <S.Answer key={answer}>{answer}</S.Answer>)
+          )}
+        </S.AnswerBox>
+      </S.AnswerWrapper>
     </S.VocaField>
   )
 }

@@ -6,7 +6,7 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
   color: #747474;

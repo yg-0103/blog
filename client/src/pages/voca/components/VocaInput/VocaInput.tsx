@@ -19,7 +19,7 @@ export default function VocaInput({ answer }: Props) {
     const top = ref.current.getBoundingClientRect().y
 
     window.scrollTo({
-      top: top + window.scrollY - 30,
+      top: top + window.scrollY - 100,
       behavior: 'smooth',
     })
   }
@@ -28,7 +28,13 @@ export default function VocaInput({ answer }: Props) {
 
   return (
     <S.Container>
-      <S.Input ref={ref} value={value} onChange={handleChageValue} onFocus={handleScrollTop} />
+      <S.Input
+        ref={ref}
+        value={value}
+        onChange={handleChageValue}
+        onFocus={handleScrollTop}
+        success={isSuccess}
+      />
       <S.Lable>{isSuccess ? <FcOk size={20} /> : <FcHighPriority size={20} />}</S.Lable>
     </S.Container>
   )

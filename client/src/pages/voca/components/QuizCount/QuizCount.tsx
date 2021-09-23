@@ -1,4 +1,3 @@
-import Button from '@components/Button'
 import { VOCA_DATA } from '@pages/voca/data'
 import { quizCount } from '@store/voca/atom'
 import { ChangeEvent } from 'react'
@@ -16,8 +15,8 @@ export default function QuizCount() {
 
   return (
     <S.Container>
-      <S.NumberInput type="text" value={count} onChange={handleChangeCout} />
-      <Button style={{ width: '8rem', height: '4rem' }}>선택</Button>
+      <S.Label>Number of quizzes</S.Label>
+      <S.Input type="text" value={count} onChange={handleChangeCout} />
     </S.Container>
   )
 }

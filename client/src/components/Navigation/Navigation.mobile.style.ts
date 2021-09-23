@@ -3,7 +3,7 @@ import { gradientText } from '@styles/styleUtill'
 
 export const Nav = styled.nav<{ active: boolean }>`
   position: fixed;
-  top: 8.2rem;
+  top: 5.2rem;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -18,8 +18,8 @@ export const Nav = styled.nav<{ active: boolean }>`
 
 export const NavItem = styled.a<{ active: boolean }>`
   width: 100%;
-  padding: 2rem;
-  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.5);
 
