@@ -2,6 +2,7 @@ import * as S from './VocaInput.style'
 import { FcOk, FcHighPriority } from 'react-icons/fc'
 import { ChangeEvent, useRef, useState } from 'react'
 import { getType } from '@utils/getType'
+import useResponsive from 'src/hooks/useResposive'
 
 interface Props {
   answer: string | string[]
@@ -9,6 +10,7 @@ interface Props {
 
 export default function VocaInput({ answer }: Props) {
   const [value, setValue] = useState('')
+  const { isSmall } = useResponsive()
   const ref = useRef<HTMLInputElement>(null)
   const handleChageValue = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value)
@@ -19,12 +21,15 @@ export default function VocaInput({ answer }: Props) {
     const top = ref.current.getBoundingClientRect().y
 
     window.scrollTo({
-      top: top + window.scrollY - 100,
+      top: top + window.scrollY - (isSmall ? 110 : 80),
       behavior: 'smooth',
     })
   }
-  const currentAnswer = getType(answer) === 'string' ? [answer] : answer
-  const isSuccess = currentAnswer.includes(value)
+  const currentAnswer = (getType(answer) === 'string' ? [answer] : answer) as string[]
+
+  const isSuccess = currentAnswer
+    .map((answer) => answer.replace(' ', ''))
+    .includes(value.replace(' ', ''))
 
   return (
     <S.Container>
@@ -35,7 +40,7 @@ export default function VocaInput({ answer }: Props) {
         onFocus={handleScrollTop}
         success={isSuccess}
       />
-      <S.Lable>{isSuccess ? <FcOk size={20} /> : <FcHighPriority size={20} />}</S.Lable>
+      <S.Lable>{isSuccess ? <FcOk size={16} /> : <FcHighPriority size={16} />}</S.Lable>
     </S.Container>
   )
 }

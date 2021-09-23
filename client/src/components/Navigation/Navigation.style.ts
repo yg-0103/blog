@@ -13,7 +13,7 @@ export const NavItem = styled.a<{ active: boolean }>`
   position: relative;
   display: block;
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.5);
 
