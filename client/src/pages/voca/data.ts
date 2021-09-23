@@ -244,4 +244,48 @@ export const VOCA_DATA = [
     voca: 'thoroughly',
     mean: ['완전히', '철저히'],
   },
+  {
+    voca: 'afford',
+    mean: ['주다'],
+  },
+  {
+    voca: 'announce',
+    mean: ['발표하다', '알리다', '공포하다'],
+  },
+  {
+    voca: 'chance',
+    mean: ['기회'],
+  },
+  {
+    voca: 'chart',
+    mean: ['작성하다'],
+  },
+  {
+    voca: 'engage',
+    mean: ['약속하다', '예약하다', '고용하다'],
+  },
+  {
+    voca: 'esteem',
+    mean: ['존경하다'],
+  },
+  {
+    voca: 'evidence',
+    mean: ['증거'],
+  },
+  {
+    voca: 'innate',
+    mean: ['타고난'],
+  },
+  {
+    voca: 'invaluable',
+    mean: ['매우 귀중한'],
+  },
+  {
+    voca: 'fertile',
+    mean: ['비옥한'],
+  },
+  {
+    voca: 'generate',
+    mean: ['발생시키다'],
+  },
 ]
