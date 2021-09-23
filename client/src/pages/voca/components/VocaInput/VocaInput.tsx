@@ -28,8 +28,8 @@ export default function VocaInput({ answer }: Props) {
   const currentAnswer = (getType(answer) === 'string' ? [answer] : answer) as string[]
 
   const isSuccess = currentAnswer
-    .map((answer) => answer.replace(' ', ''))
-    .includes(value.replace(' ', ''))
+    .map((answer) => answer.toLocaleLowerCase().replace(' ', ''))
+    .includes(value.toLocaleLowerCase().replace(' ', ''))
 
   return (
     <S.Container>

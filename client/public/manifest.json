@@ -6,7 +6,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "ygblog.vercel",
-  "start_url": "/",
+  "start_url": "/voca",
   "theme_color": "#ffffff",
   "icons": [
     {
