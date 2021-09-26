@@ -288,4 +288,56 @@ export const VOCA_DATA = [
     voca: 'generate',
     mean: ['발생시키다'],
   },
+  {
+    voca: 'irreparable',
+    mean: ['돌이킬 수 없는'],
+  },
+  {
+    voca: 'maxim',
+    mean: ['격언'],
+  },
+  {
+    voca: 'object',
+    mean: ['항의하다', '목적'],
+  },
+  {
+    voca: 'outstanding',
+    mean: ['뛰어난', '미결제의'],
+  },
+  {
+    voca: 'patron',
+    mean: ['고객', '후원자'],
+  },
+  {
+    voca: 'predominate',
+    mean: ['우세하다', '지배력을 갖다'],
+  },
+  {
+    voca: 'previous',
+    mean: ['이전의'],
+  },
+  {
+    voca: 'premise',
+    mean: ['전제'],
+  },
+  {
+    voca: 'primitive',
+    mean: ['원시적인', '기본적인'],
+  },
+  {
+    voca: 'proficiency',
+    mean: ['능숙함', '숙달'],
+  },
+  {
+    voca: 'proposition',
+    mean: ['제안'],
+  },
+  {
+    voca: 'questionable',
+    mean: ['의심스러운'],
+  },
+  {
+    voca: 'avoid',
+    mean: ['피하다'],
+  },
 ]
