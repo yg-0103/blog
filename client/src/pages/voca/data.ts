@@ -340,4 +340,44 @@ export const VOCA_DATA = [
     voca: 'avoid',
     mean: ['피하다'],
   },
+  {
+    voca: 'rife with',
+    mean: ['수없이 많은', '가득찬'],
+  },
+  {
+    voca: 'shield',
+    mean: ['보호하다'],
+  },
+  {
+    voca: 'stick',
+    mean: ['고수하다', '달라붙다'],
+  },
+  {
+    voca: 'stimulus',
+    mean: ['자극', '격려'],
+  },
+  {
+    voca: 'stir',
+    mean: ['젓다'],
+  },
+  {
+    voca: 'taboo',
+    mean: ['금기'],
+  },
+  {
+    voca: 'thrive',
+    mean: ['번성하다'],
+  },
+  {
+    voca: 'vagary',
+    mean: ['예측불허의 변화'],
+  },
+  {
+    voca: 'wane',
+    mean: ['감소하다', '쇠퇴하다'],
+  },
+  {
+    voca: 'view',
+    mean: ['간주하다', '견해', '의견'],
+  },
 ]
