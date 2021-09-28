@@ -380,4 +380,8 @@ export const VOCA_DATA = [
     voca: 'view',
     mean: ['간주하다', '견해', '의견'],
   },
+  {
+    voca: 'solitary',
+    mean: ['외딴', '고독한'],
+  },
 ]
