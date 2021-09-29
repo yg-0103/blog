@@ -384,4 +384,52 @@ export const VOCA_DATA = [
     voca: 'solitary',
     mean: ['외딴', '고독한'],
   },
+  {
+    voca: 'achieve',
+    mean: ['성취하다'],
+  },
+  {
+    voca: 'anchor',
+    mean: ['고정시키다'],
+  },
+  {
+    voca: 'attribute',
+    mean: ['특성', '~의 탓으로 돌리다'],
+  },
+  {
+    voca: 'brisk',
+    mean: ['활기있는'],
+  },
+  {
+    voca: 'codify',
+    mean: ['정리하다'],
+  },
+  {
+    voca: 'consummate',
+    mean: ['완전한', '뛰어난'],
+  },
+  {
+    voca: 'descent',
+    mean: ['하강', '혈통', '기원'],
+  },
+  {
+    voca: 'disseminate',
+    mean: ['퍼뜨리다'],
+  },
+  {
+    voca: 'emergence',
+    mean: ['출현', '부상'],
+  },
+  {
+    voca: 'facilitate',
+    mean: ['용이하게 하다'],
+  },
+  {
+    voca: 'fervent',
+    mean: ['열정적인'],
+  },
+  {
+    voca: 'earn',
+    mean: ['획득하다'],
+  },
 ]
