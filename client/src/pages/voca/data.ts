@@ -432,4 +432,12 @@ export const VOCA_DATA = [
     voca: 'earn',
     mean: ['획득하다'],
   },
+  {
+    voca: 'discovery',
+    mean: ['발견'],
+  },
+  {
+    voca: 'arrive',
+    mean: ['도착하다', '태어나다'],
+  },
 ]
