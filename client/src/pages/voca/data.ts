@@ -440,4 +440,64 @@ export const VOCA_DATA = [
     voca: 'arrive',
     mean: ['도착하다', '태어나다'],
   },
+  {
+    voca: 'fine',
+    mean: ['미세한', '섬세한', '가느다란'],
+  },
+  {
+    voca: 'frivolous',
+    mean: ['사소한'],
+  },
+  {
+    voca: 'giant',
+    mean: ['거인'],
+  },
+  {
+    voca: 'golden age',
+    mean: ['전성기'],
+  },
+  {
+    voca: 'grasp',
+    mean: ['붙잡다', '이해하다', '파악하다'],
+  },
+  {
+    voca: 'hamstrung',
+    mean: ['무력한', '불구의'],
+  },
+  {
+    voca: 'haphazard',
+    mean: ['되는대로의', '우연의'],
+  },
+  {
+    voca: 'incidental',
+    mean: ['중요하지 않은', '부수적인'],
+  },
+  {
+    voca: 'initiate',
+    mean: ['시작하다'],
+  },
+  {
+    voca: 'make up',
+    mean: ['창안하다', '창작하다'],
+  },
+  {
+    voca: 'manifold',
+    mean: ['가지각색의'],
+  },
+  {
+    voca: 'procure',
+    mean: ['얻다'],
+  },
+  {
+    voca: 'period',
+    mean: ['기간', '시기', '시대'],
+  },
+  {
+    voca: 'obliterate',
+    mean: ['삭제하다'],
+  },
+  {
+    voca: 'proceed',
+    mean: ['나아가다'],
+  },
 ]
