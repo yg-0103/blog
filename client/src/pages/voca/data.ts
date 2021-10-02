@@ -500,4 +500,28 @@ export const VOCA_DATA = [
     voca: 'proceed',
     mean: ['나아가다'],
   },
+  {
+    voca: 'professional',
+    mean: ['전문적인'],
+  },
+  {
+    voca: 'responsible',
+    mean: ['책임이 있는'],
+  },
+  {
+    voca: 'sharp',
+    mean: ['날카로운', '예리한', '급격한'],
+  },
+  {
+    voca: 'supplement',
+    mean: ['보충하다', '추가', '부가'],
+  },
+  {
+    voca: 'suspend',
+    mean: ['매달다', '연기하다', '중지하다'],
+  },
+  {
+    voca: 'tailored',
+    mean: ['맞추어진'],
+  },
 ]
