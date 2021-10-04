@@ -524,4 +524,8 @@ export const VOCA_DATA = [
     voca: 'tailored',
     mean: ['맞추어진'],
   },
+  {
+    voca: 'redundancy',
+    mean: ['불필요한 중복', '중복성'],
+  },
 ]
