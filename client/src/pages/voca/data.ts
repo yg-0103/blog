@@ -528,4 +528,120 @@ export const VOCA_DATA = [
     voca: 'redundancy',
     mean: ['불필요한 중복', '중복성'],
   },
+  {
+    voca: 'aimlessly',
+    mean: ['목적 없이'],
+  },
+  {
+    voca: 'ally',
+    mean: ['~와 동맹하다', '연합하다'],
+  },
+  {
+    voca: 'anticipate',
+    mean: ['예견하다'],
+  },
+  {
+    voca: 'archaic',
+    mean: ['구식의'],
+  },
+  {
+    voca: 'asset',
+    mean: ['장점', '이점'],
+  },
+  {
+    voca: 'anonymous',
+    mean: ['익명의'],
+  },
+  {
+    voca: 'behavior',
+    mean: ['행동'],
+  },
+  {
+    voca: 'ceaseless',
+    mean: ['끊임 없는'],
+  },
+  {
+    voca: 'cut',
+    mean: ['절단하다'],
+  },
+  {
+    voca: 'disturbance',
+    mean: ['동요', '혼란'],
+  },
+  {
+    voca: 'confederacy',
+    mean: ['연합', '동맹'],
+  },
+  {
+    voca: 'elucidate',
+    mean: ['명료하게 하다'],
+  },
+  {
+    voca: 'encroachment',
+    mean: ['침범'],
+  },
+  {
+    voca: 'change',
+    mean: ['변화시키다'],
+  },
+  {
+    voca: 'entice',
+    mean: ['유혹하다'],
+  },
+  {
+    voca: 'equivocally',
+    mean: ['애매하게'],
+  },
+  {
+    voca: 'exterminate',
+    mean: ['근절하다'],
+  },
+  {
+    voca: 'fortify',
+    mean: ['강화하다', '확고히 하다'],
+  },
+  {
+    voca: 'formerly',
+    mean: ['이전에'],
+  },
+  {
+    voca: 'immunity',
+    mean: ['면제'],
+  },
+  {
+    voca: 'improve',
+    mean: ['개선하다'],
+  },
+  {
+    voca: 'in retrospect',
+    mean: ['되돌아보면', '회상하면'],
+  },
+  {
+    voca: 'lose sight of',
+    mean: ['잊다'],
+  },
+  {
+    voca: 'permit',
+    mean: ['허락하다'],
+  },
+  {
+    voca: 'rarely',
+    mean: ['드물게', '좀처럼 ~하지 않는'],
+  },
+  {
+    voca: 'radical',
+    mean: ['근본적인', '급진적인'],
+  },
+  {
+    voca: 'nuts and bolts',
+    mean: ['기본'],
+  },
+  {
+    voca: 'sparse',
+    mean: ['빈약한', '부족한'],
+  },
+  {
+    voca: 'sting',
+    mean: ['얼얼하다', '쓰리다'],
+  },
 ]
