@@ -644,4 +644,40 @@ export const VOCA_DATA = [
     voca: 'sting',
     mean: ['얼얼하다', '쓰리다'],
   },
+  {
+    voca: 'support',
+    mean: ['지지하다', '부양하다'],
+  },
+  {
+    voca: 'tangible',
+    mean: ['실질적인'],
+  },
+  {
+    voca: 'tolerate',
+    mean: ['견디다', '참다'],
+  },
+  {
+    voca: 'train',
+    mean: ['~로 향하게 하다'],
+  },
+  {
+    voca: 'unambiguous',
+    mean: ['명확한'],
+  },
+  {
+    voca: 'virtually',
+    mean: ['거의', '사실상'],
+  },
+  {
+    voca: 'wary',
+    mean: ['조심하는'],
+  },
+  {
+    voca: 'wealth',
+    mean: ['풍부함'],
+  },
+  {
+    voca: 'wiggle',
+    mean: ['이리저리 흔들다'],
+  },
 ]
