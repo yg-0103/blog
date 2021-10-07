@@ -680,4 +680,48 @@ export const VOCA_DATA = [
     voca: 'wiggle',
     mean: ['이리저리 흔들다'],
   },
+  {
+    voca: 'agile',
+    mean: ['민첩한'],
+  },
+  {
+    voca: 'ample',
+    mean: ['충분한', '넓은'],
+  },
+  {
+    voca: 'arbitrarily',
+    mean: ['임의로', '제멋대로'],
+  },
+  {
+    voca: 'attest',
+    mean: ['입증하다'],
+  },
+  {
+    voca: 'break with',
+    mean: ['관계를 끊다'],
+  },
+  {
+    voca: 'brightness',
+    mean: ['빛'],
+  },
+  {
+    voca: 'conjure',
+    mean: ['불러내다', '간청하다', '상기시키다'],
+  },
+  {
+    voca: 'correspondence',
+    mean: ['유사성', '통신'],
+  },
+  {
+    voca: 'contrive',
+    mean: ['고안해내다'],
+  },
+  {
+    voca: 'durable',
+    mean: ['지속적인'],
+  },
+  {
+    voca: 'dwarf',
+    mean: ['난쟁이'],
+  },
 ]
