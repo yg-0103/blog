@@ -724,4 +724,68 @@ export const VOCA_DATA = [
     voca: 'dwarf',
     mean: ['난쟁이'],
   },
+  {
+    voca: 'enigmatic',
+    mean: ['알기 어려운'],
+  },
+  {
+    voca: 'extinct',
+    mean: ['멸종된'],
+  },
+  {
+    voca: 'fabricate',
+    mean: ['만들어내다'],
+  },
+  {
+    voca: 'flake',
+    mean: ['파편'],
+  },
+  {
+    voca: 'harm',
+    mean: ['손해'],
+  },
+  {
+    voca: 'innocent',
+    mean: ['결백한'],
+  },
+  {
+    voca: 'in the course of',
+    mean: ['~동안에'],
+  },
+  {
+    voca: 'in vain',
+    mean: ['헛되이'],
+  },
+  {
+    voca: 'inconsequential',
+    mean: ['사소한', '하찮은'],
+  },
+  {
+    voca: 'leave',
+    mean: ['떠나다'],
+  },
+  {
+    voca: 'liken',
+    mean: ['비유하다'],
+  },
+  {
+    voca: 'moderate',
+    mean: ['온건한'],
+  },
+  {
+    voca: 'literally',
+    mean: ['실제로'],
+  },
+  {
+    voca: 'prolong',
+    mean: ['연장하다'],
+  },
+  {
+    voca: 'purify',
+    mean: ['정화하다', '깨끗이 하다'],
+  },
+  {
+    voca: 'reasonable',
+    mean: ['이치에 맞는', '합리적인'],
+  },
 ]
