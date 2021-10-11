@@ -13,14 +13,14 @@ export const Content = styled(ReactMarkdown)`
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   h3 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 `

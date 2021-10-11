@@ -1,24 +1,26 @@
-import { asyncGetPosts } from '@store/blog/atom'
-import { useEffect } from 'react'
-import { useRecoilValueLoadable, useResetRecoilState } from 'recoil'
 import PostCard from '../PostCard'
 import * as S from './PostList.style'
 
-export default function PostList() {
-  const posts = useRecoilValueLoadable(asyncGetPosts)
-  const refetch = useResetRecoilState(asyncGetPosts)
+interface Props {
+  [key: string]: {
+    title: string
+    content: string
+    category: string
+    createdAt: string
+  }[]
+}
 
-  useEffect(() => {
-    refetch()
-  }, [])
-
-  if (posts.state !== 'hasValue') return null
+export default function PostList({ posts }: Props) {
+  const p = Object.values(posts).flat()
 
   return (
     <S.Container>
-      {posts.contents?.map((post) => (
-        <PostCard key={post._id} post={post} />
+      {p.map((post) => (
+        <PostCard key={post.title} post={post} />
       ))}
+      {/* {posts.contents?.map((post) => (
+        <PostCard key={post._id} post={post} />
+      ))} */}
     </S.Container>
   )
 }

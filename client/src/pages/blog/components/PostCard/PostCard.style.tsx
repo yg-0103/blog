@@ -19,8 +19,15 @@ export const Container = styled.li`
 `
 
 export const ImageWrapper = styled.div`
-  flex: 1;
+  flex: 1.5;
   background-image: ${makeGradient('#2cdb93', '#36c6ff', '180deg')};
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -2.5rem;
+  }
 `
 
 export const ContentWrapper = styled.div`
@@ -30,7 +37,7 @@ export const ContentWrapper = styled.div`
   margin-top: 1rem;
 `
 export const PostTitle = styled.h3`
-  font-size: 2rem;
+  font-size: 1.6rem;
 `
 
 export const PostContent = styled(ReactMarkdown)`
@@ -41,11 +48,11 @@ export const PostContent = styled(ReactMarkdown)`
   h1,
   h2,
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: normal;
   }
-  margin-top: 1rem;
-  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
 
   ${multipleLineEllipsis(3)}
 `

@@ -15,7 +15,7 @@ export const ButtonWrapper = styled.div`
 
 export const Container = styled.div`
   position: relative;
-  margin-top: 10rem;
+  margin-top: 7rem;
 
   ${ButtonWrapper} {
     position: absolute;
@@ -25,7 +25,7 @@ export const Container = styled.div`
 `
 
 export const PostTitle = styled.h2`
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
   color: rgb(52, 58, 64);
 `
