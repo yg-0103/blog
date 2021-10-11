@@ -14,7 +14,7 @@ export const getStaticPaths: GetStaticPaths = () => {
   const postPaths = categories.map((category) => fs.readdirSync(`${POSTS_PATH}/${category}`)).flat()
 
   return {
-    paths: postPaths.map((path) => ({ params: { postTitle: path } })),
+    paths: postPaths.map((path) => ({ params: { postTitle: path.replace(/\.md/, '') } })),
     fallback: true,
   }
 }
