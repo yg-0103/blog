@@ -15,7 +15,7 @@ export default function PostCard({ post }: Props) {
         <S.ContentWrapper>
           <S.PostTitle>{post.title}</S.PostTitle>
           <S.PostContent>{post.content}</S.PostContent>
-          <S.TimeStemp>{getDate(post.createdAt.replaceAll(' ', ''))}</S.TimeStemp>
+          <S.TimeStemp>{getDate(post.createdAt.replaceAll?.(' ', ''))}</S.TimeStemp>
         </S.ContentWrapper>
       </S.Container>
     </Link>
