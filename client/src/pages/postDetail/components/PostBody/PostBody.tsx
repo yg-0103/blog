@@ -13,7 +13,7 @@ export default function PostBody({ content }: Props) {
           code({ inline, className, children }) {
             const match = /language-(\w+)/.exec(className || '')
             return !inline && match ? (
-              <SyntaxHighlighter language="js" PreTag="div">
+              <SyntaxHighlighter language="ts" PreTag="div">
                 {String(children[0])?.replace(/\n$/, '')}
               </SyntaxHighlighter>
             ) : (

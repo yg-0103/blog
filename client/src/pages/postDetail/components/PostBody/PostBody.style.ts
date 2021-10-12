@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Content = styled(ReactMarkdown)`
   * {
     all: revert;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.7;
   }
 

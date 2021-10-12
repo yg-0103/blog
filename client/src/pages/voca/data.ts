@@ -788,4 +788,48 @@ export const VOCA_DATA = [
     voca: 'reasonable',
     mean: ['이치에 맞는', '합리적인'],
   },
+  {
+    voca: 'refined',
+    mean: ['정제된'],
+  },
+  {
+    voca: 'retain',
+    mean: ['유지하다', '보유하다'],
+  },
+  {
+    voca: 'shabby',
+    mean: ['초라한'],
+  },
+  {
+    voca: 'scarce',
+    mean: ['드문'],
+  },
+  {
+    voca: 'short-lived',
+    mean: ['단기간의'],
+  },
+  {
+    voca: 'solidify',
+    mean: ['결속시키다'],
+  },
+  {
+    voca: 'substantial',
+    mean: ['튼튼한', '상당한'],
+  },
+  {
+    voca: 'scope',
+    mean: ['범위'],
+  },
+  {
+    voca: 'vacant',
+    mean: ['텅 빈'],
+  },
+  {
+    voca: 'wizened',
+    mean: ['시든', '주름진'],
+  },
+  {
+    voca: 'zone',
+    mean: ['지역'],
+  },
 ]
