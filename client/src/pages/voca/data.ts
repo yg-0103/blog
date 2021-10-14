@@ -832,4 +832,48 @@ export const VOCA_DATA = [
     voca: 'zone',
     mean: ['지역'],
   },
+  {
+    voca: 'abolish',
+    mean: ['폐지하다'],
+  },
+  {
+    voca: 'adage',
+    mean: ['속담', '금언'],
+  },
+  {
+    voca: 'aesthetic',
+    mean: ['미적인'],
+  },
+  {
+    voca: 'affect',
+    mean: ['~에 영향을 미치다', '~인 체하다'],
+  },
+  {
+    voca: 'alteration',
+    mean: ['변경'],
+  },
+  {
+    voca: 'amenity',
+    mean: ['편의시설'],
+  },
+  {
+    voca: 'approximately',
+    mean: ['대략'],
+  },
+  {
+    voca: 'bear',
+    mean: ['운반하다', '산출하다', '생기게 하다', '견디다', '지탱하다'],
+  },
+  {
+    voca: 'artisan',
+    mean: ['숙련공'],
+  },
+  {
+    voca: 'constituent',
+    mean: ['구성요소의', '구성하는'],
+  },
+  {
+    voca: 'bountiful',
+    mean: ['풍부한', '풍성한'],
+  },
 ]
