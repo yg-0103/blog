@@ -1,6 +1,15 @@
-/** @type { import('@ts-jest/dist/types').InitialOptionsTsJest} */
-
 module.exports = {
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
+  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
   preset: 'ts-jest',
-  testEnvironment: 'jsdom',
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
+  globals: {
+    'ts-jest': {
+      tsConfig: '<rootDir>/tsconfig.jest.json',
+    },
+  },
 }

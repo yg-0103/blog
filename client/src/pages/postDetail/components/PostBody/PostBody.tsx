@@ -1,5 +1,6 @@
 import * as S from './PostBody.style'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import React from 'react'
 
 interface Props {
   content: string
