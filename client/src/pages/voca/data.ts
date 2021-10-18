@@ -876,4 +876,60 @@ export const VOCA_DATA = [
     voca: 'bountiful',
     mean: ['풍부한', '풍성한'],
   },
+  {
+    voca: 'dispute',
+    mean: ['논쟁하다', '논쟁'],
+  },
+  {
+    voca: 'faculty',
+    mean: ['능력'],
+  },
+  {
+    voca: 'field',
+    mean: ['분야'],
+  },
+  {
+    voca: 'guiltyless',
+    mean: ['결백한', '무고한'],
+  },
+  {
+    voca: 'influx',
+    mean: ['유입'],
+  },
+  {
+    voca: 'inundate',
+    mean: ['물에 잠기게 하다'],
+  },
+  {
+    voca: 'lexicon',
+    mean: ['어휘'],
+  },
+  {
+    voca: 'lure',
+    mean: ['유혹하다', '유혹', '매력'],
+  },
+  {
+    voca: 'mount',
+    mean: ['오르다', '증가하다'],
+  },
+  {
+    voca: 'mixture',
+    mean: ['혼합물'],
+  },
+  {
+    voca: 'mundane',
+    mean: ['평범한'],
+  },
+  {
+    voca: 'outstrip',
+    mean: ['능가하다', '뛰어나다'],
+  },
+  {
+    voca: 'nearly',
+    mean: ['거의'],
+  },
+  {
+    voca: 'pertinent',
+    mean: ['적절한', '관련된'],
+  },
 ]
