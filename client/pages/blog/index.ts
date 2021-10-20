@@ -10,7 +10,7 @@ interface Posts {
 const POSTS_PATH = join(process.cwd(), 'src/pages/blog/contents')
 
 export const getStaticProps: GetStaticProps = () => {
-  const categories = fs.readdirSync(POSTS_PATH)
+  const categories = fs.readdirSync(POSTS_PATH).filter((category) => category !== '.DS_Store')
 
   const posts = categories.reduce<Posts>((acc, cur) => {
     acc[cur] = fs.readdirSync(`${POSTS_PATH}/${cur}`).map((file) => ({
@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps = () => {
 
   return {
     props: {
-      posts,
+      postsData: posts,
     },
   }
 }
