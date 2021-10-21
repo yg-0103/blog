@@ -1,9 +1,9 @@
-import { PostData } from '@store/blog/model'
+import { Post } from '@store/blog/model'
 import PostCard from '../PostCard'
 import * as S from './PostList.style'
 
 interface Props {
-  postData: PostData
+  postData: Post[]
 }
 
 export default function PostList({ postData }: Props) {

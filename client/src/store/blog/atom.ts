@@ -1,4 +1,4 @@
-import { atom } from 'recoil'
+import { atom, selector } from 'recoil'
 import { PostData } from './model'
 
 export const postsList = atom<PostData | null>({
@@ -6,7 +6,17 @@ export const postsList = atom<PostData | null>({
   default: null,
 })
 
-export const quizCount = atom({
-  key: 'QuizCount',
-  default: 10,
+export const selectedPostTab = atom({
+  key: 'SelectedPostTab',
+  default: 'all',
+})
+
+export const currentPostList = selector({
+  key: 'CurrentPostList',
+  get: ({ get }) => {
+    const postList = get(postsList)
+    const selectedTab = get(selectedPostTab)
+
+    return postList?.[selectedTab]
+  },
 })

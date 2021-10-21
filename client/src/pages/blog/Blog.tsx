@@ -1,7 +1,7 @@
-import { postsList } from '@store/blog/atom'
+import { currentPostList, postsList } from '@store/blog/atom'
 import { Post } from '@store/blog/model'
 import { useEffect } from 'react'
-import { useRecoilState } from 'recoil'
+import { useRecoilValue, useSetRecoilState } from 'recoil'
 import Layout from 'src/Layout/Layout'
 import * as CS from './common.style'
 import PostList from './components/PostList'
@@ -14,19 +14,20 @@ interface Props {
 }
 
 export default function Blog({ postsData }: Props) {
-  const [posts, setPosts] = useRecoilState(postsList)
-
+  const setPosts = useSetRecoilState(postsList)
+  const currentPosts = useRecoilValue(currentPostList)
   useEffect(() => {
     setPosts(postsData)
   }, [])
 
-  if (!posts) return null
-  const categories = Object.keys(posts)
+  if (!currentPosts) return null
+  console.log(+new Date(currentPosts?.[0].createdAt))
+  const categories = Object.keys(postsData)
   return (
     <Layout>
       <CS.Section>
         <PostTab categories={categories} />
-        <PostList postData={posts} />
+        <PostList postData={currentPosts} />
       </CS.Section>
     </Layout>
   )
