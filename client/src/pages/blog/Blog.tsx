@@ -21,7 +21,7 @@ export default function Blog({ postsData }: Props) {
   }, [])
 
   if (!currentPosts) return null
-  console.log(+new Date(currentPosts?.[0].createdAt))
+
   const categories = Object.keys(postsData)
   return (
     <Layout>

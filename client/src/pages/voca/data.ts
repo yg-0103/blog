@@ -889,7 +889,7 @@ export const VOCA_DATA = [
     mean: ['분야'],
   },
   {
-    voca: 'guiltyless',
+    voca: 'guiltless',
     mean: ['결백한', '무고한'],
   },
   {
@@ -931,5 +931,94 @@ export const VOCA_DATA = [
   {
     voca: 'pertinent',
     mean: ['적절한', '관련된'],
+  },
+  {
+    voca: 'preclude',
+    mean: ['그만하게 하다', '막다'],
+  },
+  {
+    voca: 'refrain',
+    mean: ['삼가다', '중단하다'],
+  },
+  {
+    voca: 'roughly',
+    mean: ['대략', '대충'],
+  },
+  {
+    voca: 'semblance',
+    mean: ['외관', '유사함'],
+  },
+  {
+    voca: 'sophisticated',
+    mean: ['복잡한', '세련된', '정교한'],
+  },
+  {
+    voca: 'stage',
+    mean: ['단계'],
+  },
+  {
+    voca: 'thick',
+    mean: ['빽빽한'],
+  },
+  {
+    voca: 'thus',
+    mean: ['따라서'],
+  },
+  {
+    voca: 'tiny',
+    mean: ['작은'],
+  },
+  {
+    voca: 'verge',
+    mean: ['경계', '찰나'],
+  },
+  {
+    voca: 'abort',
+    mean: ['중단하다', '유산하다'],
+  },
+  {
+    voca: 'acquire',
+    mean: ['습득하다'],
+  },
+  {
+    voca: 'affection',
+    mean: ['애정'],
+  },
+  {
+    voca: 'alert',
+    mean: ['경고하다', '경계하는'],
+  },
+  {
+    voca: 'allure',
+    mean: ['유혹하다', '끌다'],
+  },
+
+  {
+    voca: 'amplify',
+    mean: ['증폭시키다'],
+  },
+  {
+    voca: 'arid',
+    mean: ['메마른'],
+  },
+  {
+    voca: 'ascribe',
+    mean: ['~의 탓으로 돌리다'],
+  },
+  {
+    voca: 'barge',
+    mean: ['바지선'],
+  },
+  {
+    voca: 'compensate',
+    mean: ['보상하다'],
+  },
+  {
+    voca: 'configure',
+    mean: ['설정하다'],
+  },
+  {
+    voca: 'drastic',
+    mean: ['과감한', '극단적인'],
   },
 ]
