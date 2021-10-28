@@ -1021,4 +1021,61 @@ export const VOCA_DATA = [
     voca: 'drastic',
     mean: ['과감한', '극단적인'],
   },
+  {
+    voca: 'embarrass',
+    mean: ['무안케 하다'],
+  },
+  {
+    voca: 'focus',
+    mean: ['집중하다'],
+  },
+  {
+    voca: 'gathering',
+    mean: ['수집', '모임'],
+  },
+  {
+    voca: 'haul',
+    mean: ['끌어당기다'],
+  },
+  {
+    voca: 'immediate',
+    mean: ['인접한'],
+  },
+  {
+    voca: 'increase',
+    mean: ['확대하다'],
+  },
+  {
+    voca: 'loom',
+    mean: ['어렴풋이 나타나다'],
+  },
+  {
+    voca: 'overtax',
+    mean: ['지나치게 과세하다'],
+  },
+  {
+    voca: 'paradox',
+    mean: ['모순'],
+  },
+  {
+    voca: 'pervasive',
+    mean: ['퍼지는'],
+  },
+  {
+    voca: 'pleasing',
+    mean: ['마음에 드는', '기분 좋은'],
+  },
+  {
+    voca: 'primary',
+    mean: ['근본적인'],
+  },
+  {
+    voca: 'proper',
+    mean: ['적당한'],
+  },
+
+  {
+    voca: 'recur',
+    mean: ['재발하다'],
+  },
 ]
