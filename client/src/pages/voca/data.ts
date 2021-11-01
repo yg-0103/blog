@@ -1078,4 +1078,40 @@ export const VOCA_DATA = [
     voca: 'recur',
     mean: ['재발하다'],
   },
+  {
+    voca: 'save for',
+    mean: ['~를 제외하고'],
+  },
+  {
+    voca: 'serve',
+    mean: ['도움이 되다'],
+  },
+  {
+    voca: 'simulate',
+    mean: ['흉내를 내다'],
+  },
+  {
+    voca: 'speck',
+    mean: ['얼룩', '소량'],
+  },
+  {
+    voca: 'strive',
+    mean: ['노력하다'],
+  },
+  {
+    voca: 'suppose',
+    mean: ['가정하다'],
+  },
+  {
+    voca: 'treat',
+    mean: ['다루다', '대하다'],
+  },
+  {
+    voca: 'undertake',
+    mean: ['착수하다', '떠맡다'],
+  },
+  {
+    voca: 'variant',
+    mean: ['변형'],
+  },
 ]
