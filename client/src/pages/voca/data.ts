@@ -1114,4 +1114,112 @@ export const VOCA_DATA = [
     voca: 'variant',
     mean: ['변형'],
   },
+  {
+    voca: 'abandon',
+    mean: ['그만두다', '버리다'],
+  },
+  {
+    voca: 'antidote',
+    mean: ['치료법'],
+  },
+  {
+    voca: 'at hand',
+    mean: ['사용가능한'],
+  },
+  {
+    voca: 'bear in mind',
+    mean: ['명심하다'],
+  },
+  {
+    voca: 'boost',
+    mean: ['증대시키다'],
+  },
+  {
+    voca: 'conspicuous',
+    mean: ['뚜렷한'],
+  },
+  {
+    voca: 'critical',
+    mean: ['위험한', '중요한'],
+  },
+  {
+    voca: 'discriminate',
+    mean: ['식별하다'],
+  },
+  {
+    voca: 'dosal',
+    mean: ['등 부분의'],
+  },
+  {
+    voca: 'eliminate',
+    mean: ['제거하다'],
+  },
+  {
+    voca: 'fuse',
+    mean: ['녹다', '녹이다'],
+  },
+  {
+    voca: 'hinterland',
+    mean: ['배후지', '오지'],
+  },
+  {
+    voca: 'in earnest',
+    mean: ['진지한'],
+  },
+  {
+    voca: 'laden',
+    mean: ['실은'],
+  },
+  {
+    voca: 'lumble',
+    mean: ['판재', '재목'],
+  },
+  {
+    voca: 'in earnest',
+    mean: ['진지한'],
+  },
+  {
+    voca: 'mirror',
+    mean: ['반영하다'],
+  },
+  {
+    voca: 'mutual',
+    mean: ['상호간의'],
+  },
+  {
+    voca: 'obtainable',
+    mean: ['손에 넣을 수 있는'],
+  },
+  {
+    voca: 'patch',
+    mean: ['작은부분', '수선하다'],
+  },
+  {
+    voca: 'protest',
+    mean: ['항의하다'],
+  },
+  {
+    voca: 'recall',
+    mean: ['회상하다'],
+  },
+  {
+    voca: 'reflection',
+    mean: ['반영'],
+  },
+  {
+    voca: 'regain',
+    mean: ['~을 되찾다'],
+  },
+  {
+    voca: 'relevant',
+    mean: ['관련이 있는', '적절한'],
+  },
+  {
+    voca: 'reminisce',
+    mean: ['추억하다'],
+  },
+  {
+    voca: 'secrate',
+    mean: ['분비하다'],
+  },
 ]
