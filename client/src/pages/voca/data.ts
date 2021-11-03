@@ -1175,10 +1175,6 @@ export const VOCA_DATA = [
     mean: ['판재', '재목'],
   },
   {
-    voca: 'in earnest',
-    mean: ['진지한'],
-  },
-  {
     voca: 'mirror',
     mean: ['반영하다'],
   },

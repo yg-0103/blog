@@ -5,6 +5,7 @@ export enum TAB_ITEM {
   SPELL = 'Spell',
   MEAN = 'Mean',
   RANDOM = 'Random',
+  LAST30 = 'Last 30',
 }
 
 export const selectedTab = atom({
@@ -23,7 +24,7 @@ export const vocaList = selector({
     const activeTab = get(selectedTab)
     const count = get(quizCount)
 
-    const vocaList = VOCA_DATA.sort(() => Math.random() - 0.5).slice(0, count)
+    const vocaList = [...VOCA_DATA].sort(() => Math.random() - 0.5).slice(0, count)
     switch (activeTab) {
       case TAB_ITEM.MEAN: {
         return vocaList.map((voca) => ({
@@ -39,6 +40,15 @@ export const vocaList = selector({
       }
       case TAB_ITEM.RANDOM: {
         return vocaList.map((voca) => {
+          const random = Math.random()
+
+          return random > 0.5
+            ? { quiz: voca.mean, answer: voca.voca }
+            : { quiz: voca.voca, answer: voca.mean }
+        })
+      }
+      case TAB_ITEM.LAST30: {
+        return VOCA_DATA.slice(VOCA_DATA.length - 30).map((voca) => {
           const random = Math.random()
 
           return random > 0.5

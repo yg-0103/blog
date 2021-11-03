@@ -6,6 +6,7 @@ const TabItem: Record<TAB_ITEM, string> = {
   [TAB_ITEM.SPELL]: 'Spell',
   [TAB_ITEM.MEAN]: 'Mean',
   [TAB_ITEM.RANDOM]: 'Random',
+  [TAB_ITEM.LAST30]: 'Last 30',
 }
 
 export default function VocaTab() {
