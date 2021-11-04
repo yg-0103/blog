@@ -1215,7 +1215,43 @@ export const VOCA_DATA = [
     mean: ['추억하다'],
   },
   {
-    voca: 'secrate',
+    voca: 'secrete',
     mean: ['분비하다'],
+  },
+  {
+    voca: 'semiarid',
+    mean: ['반건조한'],
+  },
+  {
+    voca: 'soothe',
+    mean: ['완화하다', '진정시키다'],
+  },
+  {
+    voca: 'surplus',
+    mean: ['나머지', '잔여'],
+  },
+  {
+    voca: 'toothed',
+    mean: ['들쑥날쑥한'],
+  },
+  {
+    voca: 'transform',
+    mean: ['변형시키다'],
+  },
+  {
+    voca: 'unbalanced',
+    mean: ['균형을 잃은'],
+  },
+  {
+    voca: 'uniformly',
+    mean: ['균일하게'],
+  },
+  {
+    voca: 'utilitarian',
+    mean: ['실용적인'],
+  },
+  {
+    voca: 'variety',
+    mean: ['다양성', '종류'],
   },
 ]
