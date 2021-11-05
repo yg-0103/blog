@@ -1254,4 +1254,56 @@ export const VOCA_DATA = [
     voca: 'variety',
     mean: ['다양성', '종류'],
   },
+  {
+    voca: 'advantage',
+    mean: ['이익'],
+  },
+  {
+    voca: 'arise from',
+    mean: ['~에서 기인하다'],
+  },
+  {
+    voca: 'barrier',
+    mean: ['방해물', '장벽'],
+  },
+  {
+    voca: 'betray',
+    mean: ['배신하다'],
+  },
+  {
+    voca: 'bind',
+    mean: ['묶다'],
+  },
+  {
+    voca: 'blur',
+    mean: ['흐리게 하다'],
+  },
+  {
+    voca: 'circumvent',
+    mean: ['우회하다'],
+  },
+  {
+    voca: 'clumsy',
+    mean: ['서투른'],
+  },
+  {
+    voca: 'commence',
+    mean: ['시작하다'],
+  },
+  {
+    voca: 'conduct',
+    mean: ['행동', '전도하다'],
+  },
+  {
+    voca: 'conserve',
+    mean: ['보존하다'],
+  },
+  {
+    voca: 'contradiction',
+    mean: ['반박', '모순'],
+  },
+  {
+    voca: 'culminate',
+    mean: ['~로 끝나다'],
+  },
 ]
