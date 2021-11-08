@@ -1306,4 +1306,60 @@ export const VOCA_DATA = [
     voca: 'culminate',
     mean: ['~로 끝나다'],
   },
+  {
+    voca: 'delineate',
+    mean: ['윤곽을 그리다'],
+  },
+  {
+    voca: 'donation',
+    mean: ['기부', '기증'],
+  },
+  {
+    voca: 'embark on',
+    mean: ['시작하다', '착수하다'],
+  },
+  {
+    voca: 'handful',
+    mean: ['소량', '소수'],
+  },
+  {
+    voca: 'foundation',
+    mean: ['기초'],
+  },
+  {
+    voca: 'fundamental',
+    mean: ['근본적인', '핵심적인'],
+  },
+  {
+    voca: 'identical',
+    mean: ['동일한'],
+  },
+  {
+    voca: 'impediment',
+    mean: ['장애'],
+  },
+  {
+    voca: 'justify',
+    mean: ['증명하다'],
+  },
+  {
+    voca: 'lament',
+    mean: ['슬퍼하다', '애도하다'],
+  },
+  {
+    voca: 'microorganism',
+    mean: ['미생물'],
+  },
+  {
+    voca: 'peculiarity',
+    mean: ['특성'],
+  },
+  {
+    voca: 'origin',
+    mean: ['발생', '근원'],
+  },
+  {
+    voca: 'physical',
+    mean: ['물질의', '육체의'],
+  },
 ]
