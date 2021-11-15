@@ -1362,4 +1362,44 @@ export const VOCA_DATA = [
     voca: 'physical',
     mean: ['물질의', '육체의'],
   },
+  {
+    voca: 'predict',
+    mean: ['예측하다'],
+  },
+  {
+    voca: 'progress',
+    mean: ['발전'],
+  },
+  {
+    voca: 'scoop',
+    mean: ['긁어모으다'],
+  },
+  {
+    voca: 'score',
+    mean: ['얻다', '악보', '악곡'],
+  },
+  {
+    voca: 'scrap',
+    mean: ['조각', '폐지하다'],
+  },
+  {
+    voca: 'singularly',
+    mean: ['각별히'],
+  },
+  {
+    voca: 'skilled',
+    mean: ['숙련된'],
+  },
+  {
+    voca: 'stem from',
+    mean: ['~에서 유래하다'],
+  },
+  {
+    voca: 'subsidize',
+    mean: ['후원하다'],
+  },
+  {
+    voca: 'unaminity',
+    mean: ['만장일치'],
+  },
 ]
