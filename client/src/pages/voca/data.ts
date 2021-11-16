@@ -1402,4 +1402,52 @@ export const VOCA_DATA = [
     voca: 'unaminity',
     mean: ['만장일치'],
   },
+  {
+    voca: 'account',
+    mean: ['계정'],
+  },
+  {
+    voca: 'alloy',
+    mean: ['혼합하다'],
+  },
+  {
+    voca: 'barely',
+    mean: ['거의 ~않다'],
+  },
+  {
+    voca: 'carry on',
+    mean: ['~을 계속하다'],
+  },
+  {
+    voca: 'cohesion',
+    mean: ['결속'],
+  },
+  {
+    voca: 'coincide',
+    mean: ['동시에 일어나다', '의견이 일치하다'],
+  },
+  {
+    voca: 'colossal',
+    mean: ['거대한'],
+  },
+  {
+    voca: 'converge',
+    mean: ['한데 모이다'],
+  },
+  {
+    voca: 'conviction',
+    mean: ['신념'],
+  },
+  {
+    voca: 'covet',
+    mean: ['갈망하다'],
+  },
+  {
+    voca: 'defect',
+    mean: ['결점'],
+  },
+  {
+    voca: 'considerable',
+    mean: ['중요한', '상당한'],
+  },
 ]
