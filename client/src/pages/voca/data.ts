@@ -1450,4 +1450,48 @@ export const VOCA_DATA = [
     voca: 'considerable',
     mean: ['중요한', '상당한'],
   },
+  {
+    voca: 'defection',
+    mean: ['변절', '탈당'],
+  },
+  {
+    voca: 'dull',
+    mean: ['지루한'],
+  },
+  {
+    voca: 'endeavor',
+    mean: ['노력하다', '애쓰다'],
+  },
+  {
+    voca: 'flock',
+    mean: ['무리', '떼'],
+  },
+  {
+    voca: 'grant',
+    mean: ['주다', '승인하다'],
+  },
+  {
+    voca: 'hustle',
+    mean: ['서두르다', '밀다'],
+  },
+  {
+    voca: 'intermediate',
+    mean: ['중간의'],
+  },
+  {
+    voca: 'intolerant',
+    mean: ['옹졸한', '편협한'],
+  },
+  {
+    voca: 'margin',
+    mean: ['가장자리'],
+  },
+  {
+    voca: 'militia',
+    mean: ['시민군'],
+  },
+  {
+    voca: 'morevover',
+    mean: ['게다가'],
+  },
 ]
