@@ -1494,4 +1494,92 @@ export const VOCA_DATA = [
     voca: 'morevover',
     mean: ['게다가'],
   },
+  {
+    voca: 'necessary',
+    mean: ['필수적인'],
+  },
+  {
+    voca: 'obstruct',
+    mean: ['막다', '방해하다'],
+  },
+  {
+    voca: 'on the spot',
+    mean: ['즉시'],
+  },
+  {
+    voca: 'partial',
+    mean: ['부분적인', '편파적인'],
+  },
+  {
+    voca: 'placid',
+    mean: ['평온한'],
+  },
+  {
+    voca: 'porosity',
+    mean: ['구멍'],
+  },
+  {
+    voca: 'reform',
+    mean: ['개선하다', '개정하다'],
+  },
+  {
+    voca: 'rigid',
+    mean: ['단단한', '뻣뻣한', '엄격한'],
+  },
+  {
+    voca: 'scarcity',
+    mean: ['부족', '결핍'],
+  },
+  {
+    voca: 'adaptable',
+    mean: ['융통성있는', '적응성있는'],
+  },
+  {
+    voca: 'adhesion',
+    mean: ['달라붙다', '부착'],
+  },
+  {
+    voca: 'blame',
+    mean: ['비난하다'],
+  },
+  {
+    voca: 'chaotic',
+    mean: ['무질서한'],
+  },
+  {
+    voca: 'comprehend',
+    mean: ['이해하다'],
+  },
+  {
+    voca: 'decided',
+    mean: ['단호한'],
+  },
+  {
+    voca: 'displace',
+    mean: ['대체하다'],
+  },
+  {
+    voca: 'enclose',
+    mean: ['에워싸다'],
+  },
+  {
+    voca: 'entail',
+    mean: ['~을 수반하다'],
+  },
+  {
+    voca: 'excel',
+    mean: ['능가하다', '빼어나다'],
+  },
+  {
+    voca: 'expend',
+    mean: ['쓰다', '들이다'],
+  },
+  {
+    voca: 'facility',
+    mean: ['재능', '소질'],
+  },
+  {
+    voca: 'illustrate',
+    mean: ['묘사하다'],
+  },
 ]
