@@ -1491,7 +1491,7 @@ export const VOCA_DATA = [
     mean: ['시민군'],
   },
   {
-    voca: 'morevover',
+    voca: 'moreover',
     mean: ['게다가'],
   },
   {
