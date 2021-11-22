@@ -1582,4 +1582,60 @@ export const VOCA_DATA = [
     voca: 'illustrate',
     mean: ['묘사하다'],
   },
+  {
+    voca: 'infrastructure',
+    mean: ['기반', '하부구조'],
+  },
+  {
+    voca: 'inhibit',
+    mean: ['억제하다'],
+  },
+  {
+    voca: 'involve',
+    mean: ['~을 수반하다', '참여시키다'],
+  },
+  {
+    voca: 'lease',
+    mean: ['임대하다', '임차하다'],
+  },
+  {
+    voca: 'likewise',
+    mean: ['또한'],
+  },
+  {
+    voca: 'lodge in',
+    mean: ['박다', '꽂아넣다'],
+  },
+  {
+    voca: 'mingle',
+    mean: ['섞이다', '혼합되다'],
+  },
+  {
+    voca: 'obligation',
+    mean: ['의무'],
+  },
+  {
+    voca: 'oblige',
+    mean: ['강요하다'],
+  },
+  {
+    voca: 'on occasion',
+    mean: ['가끔'],
+  },
+  {
+    voca: 'pare',
+    mean: ['껍질을 벗기다'],
+  },
+  {
+    voca: 'predominately',
+    mean: ['주로'],
+  },
+  {
+    voca: 'predained',
+    mean: ['예정된'],
+  },
+  {
+    voca: 'render',
+    mean: ['~가 되게하다'],
+  },
 ]
