@@ -1636,6 +1636,42 @@ export const VOCA_DATA = [
   },
   {
     voca: 'render',
-    mean: ['~가 되게하다'],
+    mean: ['~가 되게하다', '주다', '~을 표현하다'],
+  },
+  {
+    voca: 'renown',
+    mean: ['명성'],
+  },
+  {
+    voca: 'repel',
+    mean: ['물리치다'],
+  },
+  {
+    voca: 'sanitation',
+    mean: ['공중위생'],
+  },
+  {
+    voca: 'scorching',
+    mean: ['몹시 뜨거운'],
+  },
+  {
+    voca: 'secluded',
+    mean: ['외딴'],
+  },
+  {
+    voca: 'spare',
+    mean: ['절약하다'],
+  },
+  {
+    voca: 'stimulating',
+    mean: ['자극을 주는', '활기를 주는'],
+  },
+  {
+    voca: 'typify',
+    mean: ['대표하다', '특징을 나타내다'],
+  },
+  {
+    voca: 'wholesale',
+    mean: ['대규모의'],
   },
 ]
