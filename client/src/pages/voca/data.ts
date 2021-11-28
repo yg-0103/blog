@@ -1674,4 +1674,52 @@ export const VOCA_DATA = [
     voca: 'wholesale',
     mean: ['대규모의'],
   },
+  {
+    voca: 'admire',
+    mean: ['존경하다', '칭찬하다'],
+  },
+  {
+    voca: 'adroit',
+    mean: ['능숙한'],
+  },
+  {
+    voca: 'camouflage',
+    mean: ['감추다', '위장하다'],
+  },
+  {
+    voca: 'ambivalent',
+    mean: ['불확실한'],
+  },
+  {
+    voca: 'composed',
+    mean: ['차분한', '작성된'],
+  },
+  {
+    voca: 'conceal',
+    mean: ['숨기다'],
+  },
+  {
+    voca: 'deliberate',
+    mean: ['신중한', '의도적인'],
+  },
+  {
+    voca: 'exhilarate',
+    mean: ['들뜨게 하다'],
+  },
+  {
+    voca: 'exposure',
+    mean: ['폭로', '발각'],
+  },
+  {
+    voca: 'glow',
+    mean: ['빛나다'],
+  },
+  {
+    voca: 'hiatus',
+    mean: ['중단', '단절'],
+  },
+  {
+    voca: 'incinerate',
+    mean: ['태우다'],
+  },
 ]
