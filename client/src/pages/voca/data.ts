@@ -1722,4 +1722,64 @@ export const VOCA_DATA = [
     voca: 'incinerate',
     mean: ['태우다'],
   },
+  {
+    voca: 'ineffectively',
+    mean: ['비효과적으로'],
+  },
+  {
+    voca: 'inert',
+    mean: ['움직일 수 없는'],
+  },
+  {
+    voca: 'luster',
+    mean: ['광채'],
+  },
+  {
+    voca: 'massive',
+    mean: ['거대한', '막대한'],
+  },
+  {
+    voca: 'occupy',
+    mean: ['끌다', '사로잡다'],
+  },
+  {
+    voca: 'precede',
+    mean: ['앞서다', '우선하다'],
+  },
+  {
+    voca: 'prove',
+    mean: ['입증하다'],
+  },
+  {
+    voca: 'purchase',
+    mean: ['얻다', '획득하다'],
+  },
+  {
+    voca: 'restrict',
+    mean: ['제한하다'],
+  },
+  {
+    voca: 'rupture',
+    mean: ['파열', '찢다', '파열시키다'],
+  },
+  {
+    voca: 'scrutiny',
+    mean: ['정밀조사'],
+  },
+  {
+    voca: 'seductive',
+    mean: ['유혹적인'],
+  },
+  {
+    voca: 'seep',
+    mean: ['스며들다'],
+  },
+  {
+    voca: 'segment',
+    mean: ['부분'],
+  },
+  {
+    voca: 'shatter',
+    mean: ['박살내다'],
+  },
 ]
