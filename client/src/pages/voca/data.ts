@@ -1826,4 +1826,8 @@ export const VOCA_DATA = [
     voca: 'wedge',
     mean: ['억지로 밀어 넣다'],
   },
+  {
+    voca: 'incorporate',
+    mean: ['포함하다'],
+  },
 ]
