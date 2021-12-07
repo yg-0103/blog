@@ -1782,4 +1782,48 @@ export const VOCA_DATA = [
     voca: 'shatter',
     mean: ['박살내다'],
   },
+  {
+    voca: 'shock',
+    mean: ['충격을 주다', '놀라게하다'],
+  },
+  {
+    voca: 'significant',
+    mean: ['중요한'],
+  },
+  {
+    voca: 'slab',
+    mean: ['두꺼운 조각'],
+  },
+  {
+    voca: 'slaughter',
+    mean: ['학살하다'],
+  },
+  {
+    voca: 'strife',
+    mean: ['싸움'],
+  },
+  {
+    voca: 'style',
+    mean: ['방식'],
+  },
+  {
+    voca: 'sustained',
+    mean: ['지속된', '일관된'],
+  },
+  {
+    voca: 'temperance',
+    mean: ['자제', '절제'],
+  },
+  {
+    voca: 'tremendous',
+    mean: ['엄청난'],
+  },
+  {
+    voca: 'vivid',
+    mean: ['생생한'],
+  },
+  {
+    voca: 'wedge',
+    mean: ['억지로 밀어 넣다'],
+  },
 ]
