@@ -1830,4 +1830,56 @@ export const VOCA_DATA = [
     voca: 'incorporate',
     mean: ['포함하다'],
   },
+  {
+    voca: 'actually',
+    mean: ['실제로', '정말로'],
+  },
+  {
+    voca: 'adorn',
+    mean: ['장식하다'],
+  },
+  {
+    voca: 'calculate',
+    mean: ['어림잡다', '추정하다'],
+  },
+  {
+    voca: 'claim',
+    mean: ['요구하다'],
+  },
+  {
+    voca: 'commemorate',
+    mean: ['기념하다'],
+  },
+  {
+    voca: 'conformity',
+    mean: ['일치'],
+  },
+  {
+    voca: 'copious',
+    mean: ['엄청난', '풍부한'],
+  },
+  {
+    voca: 'desire',
+    mean: ['욕구', '바라다'],
+  },
+  {
+    voca: 'diligently',
+    mean: ['열심히'],
+  },
+  {
+    voca: 'enthrall',
+    mean: ['매혹하다'],
+  },
+  {
+    voca: 'feast',
+    mean: ['축제', '배불리 먹다'],
+  },
+  {
+    voca: 'gather',
+    mean: ['모으다'],
+  },
+  {
+    voca: 'gauge',
+    mean: ['판단하다', '평가하다'],
+  },
 ]
