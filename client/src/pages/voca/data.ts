@@ -1882,4 +1882,64 @@ export const VOCA_DATA = [
     voca: 'gauge',
     mean: ['판단하다', '평가하다'],
   },
+  {
+    voca: 'glue',
+    mean: ['접착시키다'],
+  },
+  {
+    voca: 'grand',
+    mean: ['웅장한'],
+  },
+  {
+    voca: 'hearten',
+    mean: ['격려하다'],
+  },
+  {
+    voca: 'hub',
+    mean: ['중심'],
+  },
+  {
+    voca: 'hybrid',
+    mean: ['잡종', '혼합물'],
+  },
+  {
+    voca: 'impetus',
+    mean: ['자극'],
+  },
+  {
+    voca: 'improvise',
+    mean: ['즉흥적으로 하다'],
+  },
+  {
+    voca: 'irresistible',
+    mean: ['저항할 수 없는'],
+  },
+  {
+    voca: 'incised',
+    mean: ['새겨진'],
+  },
+  {
+    voca: 'inherent in',
+    mean: ['내재된'],
+  },
+  {
+    voca: 'main',
+    mean: ['주요한'],
+  },
+  {
+    voca: 'negligence',
+    mean: ['부주의', '태만'],
+  },
+  {
+    voca: 'outweith',
+    mean: ['~보다 뛰어나다'],
+  },
+  {
+    voca: 'pigment',
+    mean: ['색소'],
+  },
+  {
+    voca: 'plausible',
+    mean: ['그럴듯한'],
+  },
 ]
