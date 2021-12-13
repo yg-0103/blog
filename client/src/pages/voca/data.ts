@@ -1942,4 +1942,28 @@ export const VOCA_DATA = [
     voca: 'plausible',
     mean: ['그럴듯한'],
   },
+  {
+    voca: 'prudent',
+    mean: ['신중한', '조심성 있는'],
+  },
+  {
+    voca: 'revise',
+    mean: ['수정하다'],
+  },
+  {
+    voca: 'tenet',
+    mean: ['원칙'],
+  },
+  {
+    voca: 'transformation',
+    mean: ['변화'],
+  },
+  {
+    voca: 'unbearably',
+    mean: ['극도로'],
+  },
+  {
+    voca: 'variable',
+    mean: ['변하기 쉬운'],
+  },
 ]
