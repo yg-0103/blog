@@ -1966,4 +1966,60 @@ export const VOCA_DATA = [
     voca: 'variable',
     mean: ['변하기 쉬운'],
   },
+  {
+    voca: 'traverse',
+    mean: ['가로지르다'],
+  },
+  {
+    voca: 'affluent',
+    mean: ['부유한', '풍족한'],
+  },
+  {
+    voca: 'aggravate',
+    mean: ['악화시키다'],
+  },
+  {
+    voca: 'cling to',
+    mean: ['~에 달라붙다', '~을 고수하다'],
+  },
+  {
+    voca: 'craft',
+    mean: ['솜씨 있게 만들다'],
+  },
+  {
+    voca: 'crest',
+    mean: ['정상'],
+  },
+  {
+    voca: 'critic',
+    mean: ['비평가'],
+  },
+  {
+    voca: 'cross-hatching',
+    mean: ['음영'],
+  },
+  {
+    voca: 'decimate',
+    mean: ['많은 사람을 죽이다'],
+  },
+  {
+    voca: 'disciple',
+    mean: ['제자'],
+  },
+  {
+    voca: 'disclose',
+    mean: ['밝히다'],
+  },
+  {
+    voca: 'disposition',
+    mean: ['성질', '기질'],
+  },
+  {
+    voca: 'dissimilar',
+    mean: ['다른'],
+  },
+  {
+    voca: 'dominant',
+    mean: ['우세한'],
+  },
 ]
