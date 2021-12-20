@@ -2022,4 +2022,56 @@ export const VOCA_DATA = [
     voca: 'dominant',
     mean: ['우세한'],
   },
+  {
+    voca: 'enunciate',
+    mean: ['분명하게 발음하다'],
+  },
+  {
+    voca: 'eradicate',
+    mean: ['근절하다'],
+  },
+  {
+    voca: 'harsh',
+    mean: ['가혹한'],
+  },
+  {
+    voca: 'heritage',
+    mean: ['유산', '전통'],
+  },
+  {
+    voca: 'inappropriate',
+    mean: ['부적당한'],
+  },
+  {
+    voca: 'insolent',
+    mean: ['무례한'],
+  },
+  {
+    voca: 'jeopardy',
+    mean: ['위험'],
+  },
+  {
+    voca: 'luxury',
+    mean: ['사치'],
+  },
+  {
+    voca: 'manipulate',
+    mean: ['조종하다', '다루다'],
+  },
+  {
+    voca: 'mock',
+    mean: ['조롱하다'],
+  },
+  {
+    voca: 'precious',
+    mean: ['귀중한'],
+  },
+  {
+    voca: 'regard',
+    mean: ['관심'],
+  },
+  {
+    voca: 'spacious',
+    mean: ['넓은'],
+  },
 ]
