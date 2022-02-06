@@ -22,11 +22,10 @@ export const ImageWrapper = styled.div`
   flex: 1.5;
   background-image: ${makeGradient('#2cdb93', '#36c6ff', '180deg')};
   overflow: hidden;
-
+  width: 100%;
   img {
     width: 100%;
-    object-fit: cover;
-    object-position: 0 -2.5rem;
+    height: 100%;
   }
 `
 
